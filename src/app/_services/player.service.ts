@@ -1,0 +1,4 @@
+@Injectable()
+export component PlayerService {
+
+}

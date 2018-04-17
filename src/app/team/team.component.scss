@@ -1,7 +1,14 @@
 .player-card {
+	margin-bottom: 40px;
 	a {
 		display: block;
 		position: relative;
+		border: 1px solid #D0D0D0;
+		border-top: 2px solid #1DC7EA;
+
+		img {
+			max-width: 100%;
+		}
 
 		.desc-holder {
 			display: block;
