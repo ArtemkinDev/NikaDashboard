@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlayerRepositoryService } from '../_services/player.repository';
+import { Player } from '../model/player.model';
 
 @Component({
   selector: 'app-team',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  players: Player[];
+
+  constructor(private playerService: PlayerRepositoryService) { }
 
   ngOnInit() {
+    this.players = this.playerService.getPlayers();
   }
 
 }

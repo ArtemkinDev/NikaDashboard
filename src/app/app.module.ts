@@ -21,33 +21,36 @@ import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { TeamComponent } from './team/team.component';
+import { ServicesModule } from './_services/services.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    UserComponent,
-    TablesComponent,
-    TypographyComponent,
-    IconsComponent,
-    MapsComponent,
-    NotificationsComponent,
-    UpgradeComponent,
-    TeamComponent
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        UserComponent,
+        TablesComponent,
+        TypographyComponent,
+        IconsComponent,
+        MapsComponent,
+        NotificationsComponent,
+        UpgradeComponent,
+        TeamComponent
 
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    NavbarModule,
-    FooterModule,
-    SidebarModule,
-    RouterModule,
-    AppRoutingModule,
-    LbdModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        NavbarModule,
+        FooterModule,
+        SidebarModule,
+        RouterModule,
+        AppRoutingModule,
+        LbdModule,
+        ServicesModule
+    ],
+    providers: [],
+    bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+}

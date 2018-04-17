@@ -1,15 +1,18 @@
 <div class="main-content">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="player-card col-sm-2 col-md-3">
+			<div
+					class="player-card col-sm-2 col-md-3"
+					*ngFor="let player of players"
+			>
 				<a href="#">
 					<div class="img-wrapper">
-						<img src="assets/img/player-avatar.jpg" alt="image description">
+						<img src="{{player.playerImage}}" alt="{{player.firstName}}">
 					</div>
 					<div class="desc-holder">
-						<h4>Имя Фамилия</h4>
-						<h5><span class="glyphicon glyphicon-star"></span> Рейтинг: 7.5</h5>
-						<strong class="player-number">07</strong>
+						<h4>{{player.firstName}} {{player.lastName}}</h4>
+						<h5><span class="glyphicon glyphicon-star"></span> Рейтинг: {{player.playerStatistic.totalRating}}</h5>
+						<strong class="player-number">{{player.number}}</strong>
 					</div>
 				</a>
 			</div>
