@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
     ngOnInit(){
     }
 
-    isMap(path){
+    /*isMap(path){
       var titlee = this.location.prepareExternalUrl(this.location.path());
       titlee = titlee.slice( 1 );
       if(path == titlee){
@@ -22,5 +22,5 @@ export class AppComponent implements OnInit {
       else {
         return true;
       }
-    }
+    }*/
 }

@@ -1,0 +1,49 @@
+.player-card {
+	a {
+		display: block;
+		position: relative;
+
+		.desc-holder {
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			min-height: 70px;
+			position: absolute;
+			padding: 15px 15px 15px 140px;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(255,255,255,0.9);
+			h4 {
+				margin: 0 0 15px;
+				font-weight: bold;
+			}
+			h5 {
+				margin: 0;
+				span {
+					color: #ff9600;
+				}
+			}
+			.player-number {
+				position: absolute;
+				top: 50%;
+				left:15px;
+				transform:translate(0, -50%);
+				font-size: 50px;
+				color: #fff;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -34px;
+				bottom: 0;
+				width: 132px;
+				background: #1DC7EA;
+				display: block;
+				-webkit-transform: skew(36deg);
+				transform: skew(36deg);
+			}
+		}
+	}
+}
