@@ -5,7 +5,10 @@
 					class="player-card col-sm-2 col-md-3"
 					*ngFor="let player of players"
 			>
-				<a href="#">
+				<a
+						href="#"
+						[routerLink]="['/player', player.id]"
+				>
 					<div class="img-wrapper">
 						<img src="{{player.playerImage}}" alt="{{player.firstName}}">
 					</div>

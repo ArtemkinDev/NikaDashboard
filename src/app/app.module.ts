@@ -22,6 +22,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { TeamComponent } from './team/team.component';
 import { ServicesModule } from './_services/services.module';
+import { PlayerInfoComponent } from './team/player-info/player-info.component';
 
 @NgModule({
     declarations: [
@@ -34,7 +35,8 @@ import { ServicesModule } from './_services/services.module';
         MapsComponent,
         NotificationsComponent,
         UpgradeComponent,
-        TeamComponent
+        TeamComponent,
+        PlayerInfoComponent
 
     ],
     imports: [

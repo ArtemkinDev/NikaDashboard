@@ -16,4 +16,8 @@ export class PlayerRepositoryService {
     getPlayers(): Player[] {
         return this.players;
     }
+
+    getPlayer(id: number): Player {
+        return this.players.find(p => p.id === id);
+    }
 }

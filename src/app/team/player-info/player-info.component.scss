@@ -1,0 +1,42 @@
+.content-holder {
+  background-color: #173c82;
+}
+.img-holder {
+  img {
+    width: 100%;
+  }
+}
+.info-col {
+  border-bottom: 2px solid #fff;
+  padding: 40px 25px;
+  p {
+    font-size: 50px;
+    color: #fff;
+    font-family: KlavikaWeb,sans-serif;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom:15px;
+    &.date-title {
+      font-size:32px;
+    }
+    &.date {
+      font-size: 20px;
+      font-style:italic;
+    }
+  }
+
+  h3 {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: KlavikaWeb,sans-serif;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+}
