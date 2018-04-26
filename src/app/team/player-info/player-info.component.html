@@ -1,7 +1,7 @@
 <div class="main-content">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="content-holder">
-			<div class="row">
+			<div class="row player-details">
 				<div class="col-sm-4">
 					<div class="img-holder">
 						<img src="{{currentPlayer.playerImage}}" alt="">
@@ -16,6 +16,58 @@
 					<div class="info-col">
 						<p class="date-title">Дата рождения:</p>
 						<p class="date">{{currentPlayer.year}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 season-statistics">
+				<div class="athlete-statistic">
+					<h3>Stats (Season 17/18)</h3>
+					<div class="stat">
+						<div class="icon">
+							<img src="assets/img/Icons/Soccerball_shad_check.svg" alt="image description">
+						</div>
+						<span class="amount">{{ currentPlayer.playerStatistic.matches }}</span>
+						<span class="identifier">
+							Игр
+						</span>
+					</div>
+					<div class="stat">
+						<div class="icon">
+							<img src="assets/img/Icons/football-logo-ball.png" alt="image description">
+						</div>
+						<span class="amount">{{ currentPlayer.playerStatistic.goals }}</span>
+						<span class="identifier">
+							Голов
+						</span>
+					</div>
+					<div class="stat">
+						<div class="icon">
+						<img src="assets/img/Icons/Yellow_card.png" alt="image description">
+						</div>
+						<span class="amount">{{ currentPlayer.playerStatistic.yellowCard }}</span>
+						<span class="identifier">
+							Карточек
+						</span>
+					</div>
+					<div class="stat">
+						<div class="icon">
+							<img src="assets/img/Icons/red-card.png" alt="image description">
+						</div>
+						<span class="amount">{{ currentPlayer.playerStatistic.redCard }}</span>
+						<span class="identifier">
+							Карточек
+						</span>
+					</div>
+					<div class="stat">
+						<div class="icon">
+							<img src="assets/img/Icons/star-rating.png" alt="image description">
+						</div>
+						<span class="amount">{{ currentPlayer.playerStatistic.totalRating }}</span>
+						<span class="identifier">
+							Рейтинг
+						</span>
 					</div>
 				</div>
 			</div>

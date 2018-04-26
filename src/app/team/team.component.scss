@@ -5,9 +5,14 @@
 		position: relative;
 		border: 1px solid #D0D0D0;
 		border-top: 2px solid #1DC7EA;
+		transition:all 0.3s;
 
 		img {
 			max-width: 100%;
+		}
+
+		&:hover {
+			opacity:0.6;
 		}
 
 		.desc-holder {
