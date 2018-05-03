@@ -8,13 +8,12 @@ import { Player } from '../model/player.model';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit {
+    constructor(private playerService: PlayerRepositoryService) { }
 
-  players: Player[];
+  ngOnInit() {}
 
-  constructor(private playerService: PlayerRepositoryService) { }
-
-  ngOnInit() {
-    this.players = this.playerService.getPlayers();
+  get players(): Player[] {
+      return this.playerService.getPlayers();
   }
 
 }

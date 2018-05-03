@@ -54,5 +54,17 @@
 			"playerImage": "assets/img/player-avatar.jpg",
 			"id": 3
 		}
+	],
+	"teams": [
+		{
+			"name": "ФК UMAX",
+			"games": 6,
+			"win": 3,
+			"draw": 0,
+			"defeats": 3,
+			"goalsScored": 21,
+			"goalsMissing": 15,
+			"points": 9
+		}
 	]
 }

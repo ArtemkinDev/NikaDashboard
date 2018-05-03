@@ -9,7 +9,8 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "json": "json-server --watch data.json --port 3100"
+        "json": "json-server --watch data.json --port 3500",
+        "dev": "concurrently --kill-others \"npm run start\" \"npm run json\""
     },
     "private": true,
     "dependencies": {

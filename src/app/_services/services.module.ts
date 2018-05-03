@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PlayerService } from './player.service';
 import { PlayerRepositoryService } from './player.repository';
+import { RestDatasource } from './rest.datasource';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-    imports: [ CommonModule ],
-    providers: [ PlayerService, PlayerRepositoryService ]
+    imports: [ CommonModule, HttpClientModule ],
+    providers: [ RestDatasource, PlayerRepositoryService ]
 })
 
 export class ServicesModule {}
