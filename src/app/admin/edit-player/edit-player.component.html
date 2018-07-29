@@ -1,0 +1,232 @@
+<div class="card">
+	<div class="drop-row">
+		<div class="dropdown">
+			<a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+			   aria-haspopup="true" aria-expanded="false">Выберете игрока для редактрования<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+				<li *ngFor="let player of players">
+					<a href="#" (click)="addCurrentPlayer(player.number)">{{player.lastName}} {{player.firstName}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="form-slider" *ngIf="currentEditingPlayer">
+		<form class="add-player-form"
+			  [ngClass]="{'player-loading' : playerLoading}"
+			  [formGroup]="form"
+			  (ngSubmit)="onSubmit()">
+			<legend>Информация о игроке - <span class="player-name-info">{{currentEditingPlayer.lastName}} {{currentEditingPlayer.firstName}}</span></legend>
+			<div class="form-group">
+				<div
+						class="file-input"
+						[ngClass]="{'img-load': imgLoad}"
+				>
+					<div class="photo-preview">
+						<img [attr.src]="imgUploaderURL" alt="">
+						<div class="temp-image"></div>
+						<div class="close-img" (click)="resetFile()"></div>
+					</div>
+					<label>
+						<span>Добавить фото</span>
+						<input
+								type="file"
+								#file
+								name="photo"
+								(change)="showPreviewImage($event)"
+								access=".png,.jpg"
+						>
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">Имя</label>
+				<input
+						type="text"
+						class="form-control"
+						id="name"
+						placeholder="Имя"
+						autocomplete="off"
+						formControlName="name"
+				>
+				<small
+						class="text-danger"
+						*ngIf="form.get('name').invalid && (form.get('name').dirty || form.get('name').touched)"
+				>
+					{{validatorMessages('name')}}
+				</small>
+			</div>
+			<div class="form-group">
+				<label for="lastname">Фамилия</label>
+				<input
+						type="text"
+						class="form-control"
+						id="lastname"
+						placeholder="Фамилия"
+						autocomplete="off"
+						formControlName="lastname"
+				>
+				<small
+						class="text-danger"
+						*ngIf="form.get('lastname').invalid && (form.get('lastname').dirty || form.get('lastname').touched)"
+				>
+					{{validatorMessages('lastname')}}
+				</small>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<label for="day">Дата рождения</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<div class="form-group">
+						<label for="day">День рождения</label>
+						<select
+								class="form-control"
+								id="day"
+								formControlName="day"
+						>
+							<option
+									*ngFor="let day of getDays()"
+									value="{{day}}"
+							>{{day}}
+							</option>
+
+						</select>
+						<small
+								class="text-danger"
+								*ngIf="form.get('day').invalid && (form.get('day').dirty || form.get('day').touched)"
+						>
+							{{validatorMessages('day')}}
+						</small>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<div class="form-group">
+						<label for="month">Месяц рождения</label>
+						<select
+								class="form-control"
+								id="month"
+								formControlName="month"
+						>
+							<option
+									*ngFor="let month of getMonth()"
+									value="{{month}}"
+							>{{month}}
+							</option>
+
+						</select>
+						<small
+								class="text-danger"
+								*ngIf="form.get('month').invalid && (form.get('month').dirty || form.get('month').touched)"
+						>
+							{{validatorMessages('month')}}
+						</small>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<div class="form-group">
+						<label for="year">Год рождения</label>
+						<select
+								class="form-control"
+								id="year"
+								formControlName="year"
+						>
+							<option
+									*ngFor="let year of getYears()"
+									value="{{year}}"
+							>{{year}}
+							</option>
+
+						</select>
+						<small
+								class="text-danger"
+								*ngIf="form.get('year').invalid && (form.get('year').dirty || form.get('year').touched)"
+						>
+							{{validatorMessages('year')}}
+						</small>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input
+						type="email"
+						class="form-control"
+						id="email"
+						placeholder="Логин"
+						formControlName="email"
+				>
+				<small
+						class="text-danger"
+						*ngIf="form.get('email').invalid && (form.get('email').dirty || form.get('email').touched)"
+				>
+					{{validatorMessages('email')}}
+				</small>
+			</div>
+			<div class="form-group">
+				<label for="password">Пароль</label>
+				<input
+						type="text"
+						class="form-control"
+						id="password"
+						placeholder="Пароль"
+						formControlName="password"
+				>
+				<small
+						class="text-danger"
+						*ngIf="form.get('password').invalid && (form.get('password').dirty || form.get('password').touched)"
+				>
+					{{validatorMessages('password')}}
+				</small>
+			</div>
+			<div class="form-group">
+				<label for="number">Игровой номер</label>
+				<select
+						class="form-control"
+						id="number"
+						formControlName="numbers"
+				>
+					<option *ngIf="!numberIsLoading">Loading...</option>
+
+					<option
+							*ngFor="let number of playerNumbers"
+							value="{{number}}"
+					>{{number}}
+					</option>
+
+				</select>
+				<small
+						class="text-danger"
+						*ngIf="form.get('numbers').invalid && (form.get('numbers').dirty || form.get('numbers').touched)"
+				>
+					{{validatorMessages('numbers')}}
+				</small>
+			</div>
+			<div class="form-group">
+				<label for="pos">Позиция</label>
+				<select
+						class="form-control"
+						id="pos"
+						formControlName="position"
+				>
+					<option
+							*ngFor="let position of positions"
+							value="{{position}}"
+					>{{position}}
+					</option>
+
+				</select>
+				<small
+						class="text-danger"
+						*ngIf="form.get('position').invalid && (form.get('position').dirty || form.get('position').touched)"
+				>
+					{{validatorMessages('position')}}
+				</small>
+			</div>
+			<button type="submit" class="btn btn-success btn-fill btn-wd">Редактировать игрока</button>
+			<button type="button" class="btn btn-danger btn-fill btn-wd" (click)="deletePlayer()">Удалить игрока</button>
+		</form>
+	</div>
+</div>

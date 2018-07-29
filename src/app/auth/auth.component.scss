@@ -1,0 +1,15 @@
+.card {
+  form [class*="col-"] {
+    padding: 6px 15px;
+  }
+  .text-danger {
+    margin: 5px 0 0;
+    padding-left: 5px;
+  }
+  .btn {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+  }
+}

@@ -11,12 +11,22 @@
                           <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th *ngFor="let cell of tableData.headerRow">{{ cell }}</th>
+                                        <th *ngFor="let cell of headerRow">{{ cell }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr *ngFor="let row of tableData.dataRows">
-                                        <td *ngFor="let cell of row">{{cell}}</td>
+                                <tr *ngIf="!teams">
+                                    <td colspan="8" class="text-center">Сезон еще не начался!</td>
+                                </tr>
+                                    <tr *ngFor="let team of teams; let i = index;">
+                                        <td>{{i + 1}}</td>
+                                        <td>{{team.name}}</td>
+                                        <td>{{team.games}}</td>
+                                        <td>{{team.win}}</td>
+                                        <td>{{team.draw}}</td>
+                                        <td>{{team.defeats}}</td>
+                                        <td>{{team.goalsScored}}:{{team.goalsMissing}}</td>
+                                        <td>{{team.points}}</td>
                                     </tr>
                                 </tbody>
                           </table>

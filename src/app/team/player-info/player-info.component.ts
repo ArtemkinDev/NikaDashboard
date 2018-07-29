@@ -1,25 +1,39 @@
-import { Component, OnInit } from '@angular/core';
-import { PlayerRepositoryService } from '../../_services/player.repository';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Player } from '../../model/player.model';
 import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs/Subscription';
+import 'rxjs/Rx';
+import { PlayerService } from '../../_services/player.service';
 
 @Component({
     selector: 'app-player-info',
     templateUrl: './player-info.component.html',
     styleUrls: [ './player-info.component.scss' ]
 })
-export class PlayerInfoComponent implements OnInit {
+export class PlayerInfoComponent implements OnInit, OnDestroy {
 
+    subscr1: Subscription;
+    subscr2: Subscription;
     currentPlayer: Player;
     id: number;
 
-    constructor(private playerService: PlayerRepositoryService,
+    constructor(private service: PlayerService,
                 private route: ActivatedRoute) {
     }
 
     ngOnInit() {
-        this.id = +this.route.snapshot.params['id'];
-        this.currentPlayer = this.playerService.getPlayer(this.id);
+        this.subscr1 = this.route.params.subscribe(params => {
+            const number = params[ 'number' ];
+            this.subscr2 = this.service.getPlayer(+number).subscribe(data => {
+                this.currentPlayer = data;
+            });
+        });
+
+    }
+
+    ngOnDestroy() {
+        this.subscr1.unsubscribe();
+        this.subscr2.unsubscribe();
     }
 
 }

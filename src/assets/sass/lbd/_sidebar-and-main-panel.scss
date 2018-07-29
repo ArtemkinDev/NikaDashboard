@@ -53,25 +53,26 @@
         }
 
         .simple-text{
+            display: flex;
+            align-items: center;
             text-transform: uppercase;
             padding: $padding-small-vertical $padding-zero;
-            display: block;
             font-size: $font-size-large;
             color: $white-color;
             text-align: left;
             font-weight: $font-weight-normal;
-            line-height: 30px;
+
         }
     }
     .logo-img{
         width: 30px;
         display: inline-block;
         max-height: 30px;
-        margin-right: 10px;
+        margin-right: 20px;
 
         img{
             width: 35px;
-            top: 11px;
+            top: 0px;
             position: absolute;
         }
     }
@@ -174,12 +175,10 @@
         .simple-text{
             text-transform: uppercase;
             padding: 5px 0px 5px 15px;
-            display: block;
             font-size: $font-size-large;
             color: $white-color;
             text-align: left;
             font-weight: $font-weight-normal;
-            line-height: 30px;
         }
     }
 

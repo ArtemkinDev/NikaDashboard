@@ -2,15 +2,1089 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef6aedf6-e5b9-4453-9549-080ca585dade" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/_services/player.service.ts" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/_services/player.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/_services/upload.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/admin/admin.routing.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/model/team.model.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/model/upload.model.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/model/user.model.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/concurrent" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/concurrent.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/concurrently" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/concurrently.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/appveyor.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/docs/demo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/docs/frontend-demo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/docs/kill-demo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/docs/raw-demo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/.bin/has-ansi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/.bin/has-ansi.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/.bin/strip-ansi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/.bin/strip-ansi.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/ansi-regex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/ansi-regex/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/ansi-regex/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/ansi-styles/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/ansi-styles/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/ansi-styles/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/node_modules/.bin/supports-color" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/node_modules/.bin/supports-color.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/node_modules/supports-color/cli.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/node_modules/supports-color/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/node_modules/supports-color/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/node_modules/supports-color/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/chalk/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/commander/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/commander/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/commander/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/commander/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/has-ansi/cli.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/has-ansi/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/has-ansi/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/has-ansi/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/has-flag/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/has-flag/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/has-flag/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/has-flag/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/strip-ansi/cli.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/strip-ansi/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/strip-ansi/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/strip-ansi/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/supports-color/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/supports-color/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/supports-color/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/supports-color/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/node_modules/supports-color/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/test/support/signal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/test/test-functional.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/concurrently/test/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_days/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_days/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_days/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_hours/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_hours/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_hours/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_iso_years/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_iso_years/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_iso_years/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_milliseconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_milliseconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_milliseconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_minutes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_minutes/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_minutes/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_months/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_months/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_months/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_quarters/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_quarters/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_quarters/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_seconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_seconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_seconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_weeks/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_weeks/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_weeks/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_years/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_years/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/add_years/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/are_ranges_overlapping/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/are_ranges_overlapping/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/are_ranges_overlapping/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/closest_index_to/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/closest_index_to/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/closest_index_to/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/closest_to/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/closest_to/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/closest_to/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/compare_asc/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/compare_asc/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/compare_asc/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/compare_desc/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/compare_desc/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/compare_desc/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_days/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_days/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_days/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_iso_weeks/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_iso_weeks/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_iso_weeks/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_iso_years/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_iso_years/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_iso_years/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_months/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_months/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_months/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_quarters/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_quarters/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_quarters/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_weeks/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_weeks/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_weeks/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_years/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_years/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_calendar_years/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_days/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_days/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_days/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_hours/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_hours/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_hours/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_iso_years/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_iso_years/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_iso_years/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_milliseconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_milliseconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_milliseconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_minutes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_minutes/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_minutes/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_months/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_months/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_months/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_quarters/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_quarters/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_quarters/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_seconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_seconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_seconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_weeks/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_weeks/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_weeks/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_years/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_years/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/difference_in_years/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words_strict/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words_strict/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words_strict/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words_to_now/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words_to_now/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/distance_in_words_to_now/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/docs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/each_day/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/each_day/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/each_day/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_day/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_day/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_day/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_hour/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_hour/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_hour/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_iso_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_iso_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_iso_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_iso_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_iso_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_iso_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_minute/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_minute/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_minute/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_quarter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_quarter/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_quarter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_second/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_second/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_second/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_today/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_today/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_today/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_tomorrow/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_tomorrow/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_tomorrow/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_yesterday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_yesterday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/end_of_yesterday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/format/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/format/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/format/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_date/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_date/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_date/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_day/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_day/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_day/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_day_of_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_day_of_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_day_of_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_days_in_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_days_in_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_days_in_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_days_in_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_days_in_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_days_in_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_hours/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_hours/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_hours/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_day/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_day/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_day/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_weeks_in_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_weeks_in_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_weeks_in_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_iso_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_milliseconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_milliseconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_milliseconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_minutes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_minutes/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_minutes/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_overlapping_days_in_ranges/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_overlapping_days_in_ranges/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_overlapping_days_in_ranges/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_quarter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_quarter/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_quarter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_seconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_seconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_seconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_time/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_time/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_time/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/get_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_after/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_after/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_after/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_before/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_before/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_before/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_date/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_date/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_date/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_equal/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_equal/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_equal/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_first_day_of_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_first_day_of_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_first_day_of_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_friday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_friday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_friday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_future/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_future/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_future/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_last_day_of_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_last_day_of_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_last_day_of_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_leap_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_leap_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_leap_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_monday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_monday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_monday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_past/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_past/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_past/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_day/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_day/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_day/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_hour/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_hour/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_hour/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_iso_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_iso_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_iso_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_iso_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_iso_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_iso_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_minute/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_minute/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_minute/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_quarter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_quarter/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_quarter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_second/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_second/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_second/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_same_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_saturday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_saturday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_saturday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_sunday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_sunday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_sunday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_hour/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_hour/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_hour/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_iso_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_iso_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_iso_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_iso_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_iso_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_iso_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_minute/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_minute/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_minute/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_quarter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_quarter/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_quarter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_second/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_second/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_second/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_this_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_thursday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_thursday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_thursday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_today/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_today/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_today/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_tomorrow/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_tomorrow/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_tomorrow/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_tuesday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_tuesday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_tuesday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_valid/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_valid/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_valid/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_wednesday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_wednesday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_wednesday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_weekend/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_weekend/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_weekend/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_within_range/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_within_range/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_within_range/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_yesterday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_yesterday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/is_yesterday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_iso_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_iso_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_iso_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_iso_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_iso_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_iso_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_quarter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_quarter/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_quarter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/last_day_of_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/_lib/build_formatting_tokens_reg_exp/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/_lib/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ar/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ar/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ar/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ar/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/bg/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/bg/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/bg/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/bg/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ca/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ca/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ca/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ca/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/cs/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/cs/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/cs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/cs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/da/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/da/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/da/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/da/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/de/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/de/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/de/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/de/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/el/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/el/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/el/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/el/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/en/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/en/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/en/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/en/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/eo/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/eo/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/eo/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/eo/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/es/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/es/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/es/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/es/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fi/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fi/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fi/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fi/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fil/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fil/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fil/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fil/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fr/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fr/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fr/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/fr/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/hr/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/hr/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/hr/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/hr/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/hu/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/hu/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/hu/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/hu/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/id/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/id/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/id/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/id/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/is/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/is/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/is/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/is/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/it/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/it/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/it/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/it/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ja/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ja/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ja/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ja/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ko/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ko/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ko/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ko/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/mk/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/mk/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/mk/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/mk/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/nb/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/nb/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/nb/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/nb/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/nl/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/nl/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/nl/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/nl/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/pl/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/pl/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/pl/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/pl/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/pt/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/pt/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/pt/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/pt/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ro/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ro/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ro/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ro/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ru/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ru/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ru/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/ru/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sk/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sk/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sk/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sk/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sl/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sl/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sl/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sl/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sv/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sv/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sv/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/sv/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/th/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/th/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/th/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/th/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/tr/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/tr/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/tr/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/tr/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/zh_cn/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/zh_cn/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/zh_cn/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/zh_cn/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/zh_tw/build_distance_in_words_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/zh_tw/build_format_locale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/zh_tw/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/locale/zh_tw/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/max/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/max/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/max/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/min/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/min/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/min/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/parse/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/parse/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/parse/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_date/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_date/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_date/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_day/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_day/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_day/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_day_of_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_day_of_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_day_of_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_hours/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_hours/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_hours/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_day/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_day/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_day/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_iso_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_milliseconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_milliseconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_milliseconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_minutes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_minutes/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_minutes/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_quarter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_quarter/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_quarter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_seconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_seconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_seconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/set_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_day/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_day/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_day/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_hour/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_hour/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_hour/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_iso_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_iso_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_iso_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_iso_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_iso_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_iso_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_minute/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_minute/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_minute/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_month/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_month/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_month/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_quarter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_quarter/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_quarter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_second/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_second/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_second/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_today/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_today/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_today/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_tomorrow/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_tomorrow/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_tomorrow/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_week/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_week/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_week/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_year/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_year/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_year/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_yesterday/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_yesterday/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/start_of_yesterday/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_days/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_days/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_days/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_hours/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_hours/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_hours/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_iso_years/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_iso_years/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_iso_years/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_milliseconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_milliseconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_milliseconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_minutes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_minutes/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_minutes/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_months/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_months/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_months/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_quarters/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_quarters/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_quarters/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_seconds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_seconds/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_seconds/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_weeks/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_weeks/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_weeks/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_years/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_years/index.js.flow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/sub_years/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/date-fns/typings.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/.coveralls.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/.jamignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/.jscsrc.todo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/authors.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.aggregates.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.aggregates.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.aggregates.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.all.compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.all.compat.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.all.compat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.all.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.all.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.async.compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.async.compat.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.async.compat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.async.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.async.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.backpressure.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.backpressure.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.backpressure.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.binding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.binding.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.binding.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.coincidence.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.coincidence.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.coincidence.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.compat.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.compat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.experimental.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.experimental.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.experimental.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.joinpatterns.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.joinpatterns.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.joinpatterns.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.compat.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.compat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.extras.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.extras.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.extras.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.lite.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.sorting.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.sorting.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.sorting.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.testing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.testing.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.testing.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.time.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.time.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.virtualtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.virtualtime.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/dist/rx.virtualtime.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/logos/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/abstractobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/aggregatesheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/anonymousobservable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/anonymousobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/asyncheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/asyncintro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/autodetachobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/backpressure/controlled.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/backpressure/pausable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/backpressure/pausablebuffered.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/backpressure/pauser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/backpressure/stopandwait.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/backpressure/windowed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/backpressureheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/basicheader-modern.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/basicheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/bindingheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/checkedobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/coincidenceheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/catchscheduler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/currentthreadscheduler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/historicalscheduler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/immediatescheduler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/scheduleditem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/scheduleperiodicrecursive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/scheduler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/scheduler.periodic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/scheduler.recursive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/scheduler.wrappers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/timeoutscheduler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/concurrency/virtualtimescheduler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/deprecate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/disposables/booleandisposable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/disposables/compositedisposable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/disposables/disposable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/disposables/refcountdisposable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/disposables/scheduleddisposable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/enumeratorheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/experimentalheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/exports.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/bindcallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/dictionary.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/dontenums.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/enumerable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/enumerator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/isequal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/polyfills.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/priorityqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/producer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/sink.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/internal/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/intro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/joinpatternsheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/joins/activeplan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/joins/joinobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/joins/pattern.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/joins/plan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/license.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/connectableobservable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/enumerable/while.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/groupedobservable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_elementatordefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_extremaby.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_findvalue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_firstonly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_firstordefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_lastordefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_observabletimerdate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_observabletimerdateandperiod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_observabletimertimespan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_observabletimertimespanandperiod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/_singleordefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/aggregate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/amb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/ambproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/and.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/asobservable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/average.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/buffer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/bufferwithcount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/bufferwithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/bufferwithtimeorcount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/case.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/catch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/catchproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/combinedsynchronized.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/combinelatest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/combinelatestproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/concatall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/concatmap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/concatmapobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/concatproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/contains.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/count.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/create.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/debounce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/defaultifempty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/defer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/delay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/delaysubscription.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/delaywithselector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/dematerialize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/distinct.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/distinctuntilchanged.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/do.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/dowhile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/elementat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/elementatordefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/empty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/every.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/exclusive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/exclusivemap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/expand.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/finally.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/find.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/findindex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/first.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/firstordefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/flatmapwithconcurrencylimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/for.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/forkjoin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/forkjoinproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/from.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/fromarray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/fromcallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/fromevent-modern.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/fromevent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/fromeventpattern.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/fromnodecallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/frompromise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/generate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/generatewithabsolutetime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/generatewithrelativetime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/groupby.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/groupbyuntil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/groupjoin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/if.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/ignoreelements.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/indexof.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/interval.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/isempty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/join.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/jortsort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/jortsortuntil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/last.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/lastordefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/let.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/manyselect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/materialize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/max.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/maxby.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/merge.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/mergeall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/mergeproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/minby.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/multicast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/never.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/observeon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/onerrorresumenext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/onerrorresumenextproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/pairs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/pairwise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/partition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/pluck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/publish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/publishlast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/publishvalue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/range.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/reduce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/repeat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/repeatproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/replay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/retry.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/retrywhen.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/return.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/sample.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/scan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/selectmany.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/selectmanyobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/selectswitch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/sequenceequal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/share.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/sharereplay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/sharevalue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/single.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/singleordefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/skip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/skiplast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/skiplastwithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/skipuntil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/skipuntilwithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/skipwhile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/skipwithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/some.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/spawn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/start.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/startasync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/startwith.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/subscribeon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/sum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/take.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/takelast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/takelastbuffer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/takelastbufferwithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/takelastwithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/takeuntil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/takeuntilwithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/takewhile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/takewithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/thendo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/throttlefirst.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/throttlewithselector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/throw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/timeinterval.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/timeout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/timeoutwithselector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/timer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/timestamp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/toarray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/toasync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/tomap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/topromise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/toset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/transduce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/using.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/when.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/where.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/while.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/window.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/windowwithcount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/windowwithtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/windowwithtimeorcount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/withlatestfrom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/zip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/ziparray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/linq/observable/zipproto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/liteextrasheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/liteheader-compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/liteheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/longstackbegin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/longstackend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/longstacktraces.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/notification.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/observable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/observeonobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/observer-extras.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/observer-lite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/observer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/outro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/scheduledobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/sortingheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/subintro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/subjects/anonymoussubject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/subjects/asyncsubject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/subjects/behaviorsubject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/subjects/innersubscription.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/subjects/replaysubject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/subjects/subject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/suboutro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/coldobservable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/hotobservable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/mockdisposable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/mockobserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/mockpromise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/reactivetest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/recorded.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/subscription.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testing/testscheduler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/testintro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/timeheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/src/core/virtualtimeheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/travis.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx-lite.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.aggregates.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.all.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.async-lite.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.async-tests.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.async.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.backpressure-lite.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.backpressure-tests.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.backpressure.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.binding-lite.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.binding.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.coincidence-lite.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.coincidence.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.experimental.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.joinpatterns.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.lite.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.testing.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.time-lite.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.time.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/rx/ts/rx.virtualtime.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/examples/simple.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/lib/spawn-command.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/test/fixtures/commit" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spawn-command/test/spawn-command-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/_services/player.repository.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/tables/tables.component.spec.ts" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.json" afterPath="$PROJECT_DIR$/data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/_services/player.repository.ts" afterPath="$PROJECT_DIR$/src/app/_services/player.repository.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/_services/rest.datasource.ts" afterPath="$PROJECT_DIR$/src/app/_services/rest.datasource.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/_services/services.module.ts" afterPath="$PROJECT_DIR$/src/app/_services/services.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.routing.ts" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/model/player.model.ts" afterPath="$PROJECT_DIR$/src/app/model/player.model.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/navbar/navbar.component.html" afterPath="$PROJECT_DIR$/src/app/shared/navbar/navbar.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/navbar/navbar.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/navbar/navbar.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.html" afterPath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.ts" afterPath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/tables/tables.component.html" afterPath="$PROJECT_DIR$/src/app/tables/tables.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/tables/tables.component.ts" afterPath="$PROJECT_DIR$/src/app/tables/tables.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/team/player-info/player-info.component.html" afterPath="$PROJECT_DIR$/src/app/team/player-info/player-info.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/team/player-info/player-info.component.scss" afterPath="$PROJECT_DIR$/src/app/team/player-info/player-info.component.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/team/player-info/player-info.component.ts" afterPath="$PROJECT_DIR$/src/app/team/player-info/player-info.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/team/team.component.html" afterPath="$PROJECT_DIR$/src/app/team/team.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/team/team.component.scss" afterPath="$PROJECT_DIR$/src/app/team/team.component.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/team/team.component.ts" afterPath="$PROJECT_DIR$/src/app/team/team.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/sass/lbd/_sidebar-and-main-panel.scss" afterPath="$PROJECT_DIR$/src/assets/sass/lbd/_sidebar-and-main-panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/environments/environment.ts" afterPath="$PROJECT_DIR$/src/environments/environment.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/app.component.css" afterPath="$PROJECT_DIR$/src/app/_services/auth.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,84 +1098,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="services.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/_services/services.module.ts">
+      <file leaf-file-name="edit-player.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rest.datasource.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/_services/rest.datasource.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="242">
+              <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.repository.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/_services/player.repository.ts">
+      <file leaf-file-name="edit-player.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="28" />
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit-player.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3089">
+              <caret line="341" column="5" lean-forward="true" selection-start-line="341" selection-start-column="5" selection-end-line="341" selection-end-column="5" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.repository.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SportsStore/src/app/model/services/product.repository.ts">
+      <file leaf-file-name="add-player.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/admin/add-player/add-player.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="store.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SportsStore/src/app/store/store.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/team/team.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-3520">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,9 +1152,21 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>'</find>
+      <find>&quot;</find>
+      <find>file-input</find>
+      <find>Validators</find>
+      <find>showPreviewImage</find>
+      <find>world-cup__player-box-holder</find>
+      <find>$white</find>
+      <find>input</find>
+      <find>inputFile</find>
+      <find>getPlayers</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
+      <replace />
+      <replace>'</replace>
+      <replace>#fff</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -129,24 +1175,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/app/_services/player.repository.ts" />
+        <option value="$PROJECT_DIR$/data.json" />
+        <option value="$PROJECT_DIR$/src/app/model/team.model.ts" />
+        <option value="$PROJECT_DIR$/src/app/_services/rest.datasource.ts" />
+        <option value="$PROJECT_DIR$/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/app/admin/admin.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/admin/admin.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/admin/admin.module.ts" />
+        <option value="$PROJECT_DIR$/src/assets/sass/lbd/_include-media.scss" />
+        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/src/assets/sass/light-bootstrap-dashboard.scss" />
+        <option value="$PROJECT_DIR$/src/app/model/upload.model.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/src/app/shared/navbar/navbar.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/model/user.model.ts" />
+        <option value="$PROJECT_DIR$/src/app/_services/services.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/auth.component.scss" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/app/model/player.model.ts" />
-        <option value="$PROJECT_DIR$/src/app/_services/player.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/team/team.component.html" />
         <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
-        <option value="$PROJECT_DIR$/src/app/team/player-info/player-info.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/auth-guard.guard.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/auth.component.html" />
+        <option value="$PROJECT_DIR$/src/app/auth/auth.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/_services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/sidebar/sidebar.component.ts" />
+        <option value="$PROJECT_DIR$/src/assets/sass/_common.scss" />
+        <option value="$PROJECT_DIR$/src/app/sidebar/sidebar.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/sidebar/sidebar.component.html" />
+        <option value="$PROJECT_DIR$/src/assets/sass/lbd/_sidebar-and-main-panel.scss" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/angular-cli.json" />
-        <option value="$PROJECT_DIR$/src/styles.css" />
-        <option value="$PROJECT_DIR$/src/assets/css/light-bootstrap-dashboard.css" />
+        <option value="$PROJECT_DIR$/src/app/_services/upload.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/tables/tables.component.html" />
+        <option value="$PROJECT_DIR$/src/app/tables/tables.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/admin/add-player/add-player.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/_services/player.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/team/player-info/player-info.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/model/player.model.ts" />
+        <option value="$PROJECT_DIR$/src/app/admin/add-player/add-player.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/admin/add-player/add-player.component.html" />
+        <option value="$PROJECT_DIR$/src/app/team/team.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/team/team.component.html" />
+        <option value="$PROJECT_DIR$/src/app/team/team.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/shared/pipes/team-sort.pipe.ts" />
         <option value="$PROJECT_DIR$/src/app/team/player-info/player-info.component.html" />
         <option value="$PROJECT_DIR$/src/app/team/player-info/player-info.component.scss" />
-        <option value="$PROJECT_DIR$/data.json" />
-        <option value="$PROJECT_DIR$/src/app/_services/services.module.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/app/_services/rest.datasource.ts" />
-        <option value="$PROJECT_DIR$/src/app/team/team.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/_services/player.repository.ts" />
+        <option value="$PROJECT_DIR$/src/app/admin/admin.routing.ts" />
+        <option value="$PROJECT_DIR$/src/app/admin/admin.component.html" />
+        <option value="$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.html" />
       </list>
     </option>
   </component>
@@ -212,7 +1291,23 @@
               <item name="NikaDashboard" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="_services" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NikaDashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NikaDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="add-player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NikaDashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NikaDashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="edit-player" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NikaDashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -271,27 +1366,58 @@
       <workItem from="1524584724431" duration="611000" />
       <workItem from="1524597500945" duration="637000" />
       <workItem from="1525195627084" duration="2296000" />
-      <workItem from="1525374449007" duration="3441000" />
+      <workItem from="1525374449007" duration="3726000" />
+      <workItem from="1525603417357" duration="9767000" />
+      <workItem from="1525975913910" duration="1559000" />
+      <workItem from="1525977493597" duration="6282000" />
+      <workItem from="1526064776008" duration="9315000" />
+      <workItem from="1526411959044" duration="3096000" />
+      <workItem from="1526415080773" duration="5000" />
+      <workItem from="1526842245965" duration="6182000" />
+      <workItem from="1526922754140" duration="4027000" />
+      <workItem from="1527010514801" duration="5727000" />
+      <workItem from="1528135443790" duration="2608000" />
+      <workItem from="1528394949890" duration="2946000" />
+      <workItem from="1528636118445" duration="2267000" />
+      <workItem from="1528825052760" duration="5214000" />
+      <workItem from="1529162250526" duration="2815000" />
+      <workItem from="1529230312715" duration="1357000" />
+      <workItem from="1529766757002" duration="2058000" />
+      <workItem from="1529780147679" duration="4349000" />
+      <workItem from="1529834923039" duration="1816000" />
+      <workItem from="1529842397694" duration="16299000" />
+      <workItem from="1529863530879" duration="7267000" />
+      <workItem from="1530034346594" duration="3323000" />
+      <workItem from="1530972468416" duration="3881000" />
+      <workItem from="1531052550883" duration="5052000" />
+      <workItem from="1531568047884" duration="19491000" />
+      <workItem from="1531679143613" duration="2481000" />
+      <workItem from="1532117968952" duration="8181000" />
+      <workItem from="1532165531103" duration="6105000" />
+      <workItem from="1532262705697" duration="4583000" />
+      <workItem from="1532283746834" duration="2979000" />
+      <workItem from="1532367885643" duration="5396000" />
+      <workItem from="1532453497755" duration="4844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17852000" />
+    <option name="totallyTimeSpent" value="179409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -313,395 +1439,384 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/_services/services.module.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/notifications/notifications.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="234">
+          <caret line="26" column="289" lean-forward="true" selection-start-line="26" selection-start-column="289" selection-end-line="26" selection-end-column="289" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/team/player-info/player-info.component.ts">
+    <entry file="file://$PROJECT_DIR$/../homeAccountancy/src/app/auth/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="572">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="51" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/model/player.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/team/team.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/team/team.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../routing/src/app/cars-page/cars-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../routing/src/app/app-route.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/player.repository.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/player.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1804">
-          <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/services.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/model/player.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/team/team.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/player.repository.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/team/team.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/model/user.model.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Projects/w3/O2D/src/app/_services/url.api.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Projects/w3/O2D/src/app/_services/http.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dashboard/web/src/app/pages/kpi/kpi.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2046">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/model/player.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="21" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        <state relative-caret-position="396">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../routing/src/app/cars-page/cars-page.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/_services/auth.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="55" />
+        <state relative-caret-position="330">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../projectrouting1/src/app/car-page/car-page.component.ts">
+    <entry file="file://$PROJECT_DIR$/../homeAccountancy/src/app/services/auth.guard.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="47" />
+        <state relative-caret-position="440">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../routing/src/app/app-route.module.ts">
+    <entry file="file://$PROJECT_DIR$/../O2D Constructor/angular-cli/src/app/components/checkout-component/checkout-section.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="264">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/team/team.component.html">
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/_common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="24" />
+        <state relative-caret-position="572">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Projects/w3/WeCode.com/markup/scss/base/_icomoon.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../homeAccountancy/.angular-cli.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../projectrouting1/.angular-cli.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles.css">
+    <entry file="file://$PROJECT_DIR$/src/app/sidebar/sidebar.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/light-bootstrap-dashboard.css">
+    <entry file="file://$PROJECT_DIR$/src/app/sidebar/sidebar.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/light-bootstrap-dashboard.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-cli.json">
+    <entry file="file://$PROJECT_DIR$/../homeAccountancy/src/app/services/auth.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/team/player-info/player-info.component.scss">
+    <entry file="file://$PROJECT_DIR$/src/app/sidebar/sidebar.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="176">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/team/player-info/player-info.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/sidebar/sidebar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="528">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/lbd/_sidebar-and-main-panel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="70" column="23" lean-forward="false" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/tables/tables.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/tables/tables.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/auth.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../homeAccountancy/src/app/auth/registration/registration.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="85" column="6" lean-forward="false" selection-start-line="85" selection-start-column="6" selection-end-line="88" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Projects/w3/Casino/WorldCupPlayersNationality/markup/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="7401" column="34" lean-forward="true" selection-start-line="7359" selection-start-column="28" selection-end-line="7401" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Projects/w3/Casino/WorldCupPlayersNationality/markup/scss/components/_players-carousel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/admin/admin.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="343" column="16" lean-forward="false" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/auth-guard.guard.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/team/player-info/player-info.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="352">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/data.source.ts" />
-    <entry file="file://$PROJECT_DIR$/../homeAccountancy/package.json">
+    <entry file="file://$PROJECT_DIR$/src/app/auth/auth.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="54" />
+        <state relative-caret-position="339">
+          <caret line="112" column="31" lean-forward="false" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SportsStore/package.json">
+    <entry file="file://$PROJECT_DIR$/src/app/_services/upload.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="62" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="62" />
+        <state relative-caret-position="801">
+          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../homeAccountancy/db.json">
+    <entry file="file://D:/Projects/w3/Casino/WorldCupPlayersNationality/markup/scss/components/_players-box.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/player.service.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/model/team.model.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2046">
-          <caret line="96" column="1" lean-forward="true" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SportsStore/src/app/model/services/rest.datasource.ts">
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/model/player.model.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="638">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/pipes/team-sort.pipe.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/_services/player.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SportsStore/src/app/model/model.module.ts">
+    <entry file="file://$PROJECT_DIR$/angular-cli.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/admin/admin.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="69" lean-forward="false" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../homeAccountancy/src/app/system/system-side-bar/system-side-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="78" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/admin/add-player/add-player.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/team/player-info/player-info.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/team/player-info/player-info.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/services.module.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/team/team.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/admin/admin.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/app/admin/add-player/add-player.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="56" lean-forward="false" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        <state relative-caret-position="264">
+          <caret line="153" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data.json">
+    <entry file="file://$PROJECT_DIR$/src/app/team/team.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="154">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="15" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/rest.datasource.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SportsStore/src/app/store/store.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SportsStore/src/app/model/services/product.repository.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SportsStore/src/app/store/store.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/team/team.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-330">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_services/player.repository.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/admin/add-player/add-player.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3520">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="28" />
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/admin/edit-player/edit-player.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3089">
+          <caret line="341" column="5" lean-forward="true" selection-start-line="341" selection-start-column="5" selection-end-line="341" selection-end-column="5" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#84#0" expanded="true" />
           </folding>
         </state>
       </provider>

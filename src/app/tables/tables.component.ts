@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Team } from '../model/team.model';
+import { RestDatasource } from '../_services/rest.datasource';
+import { Subscription } from 'rxjs/Subscription';
 
 declare interface TableData {
     headerRow: string[];
@@ -10,23 +13,24 @@ declare interface TableData {
   templateUrl: './tables.component.html',
   styleUrls: ['./tables.component.css']
 })
-export class TablesComponent implements OnInit {
-    public tableData: TableData;
-    
-  constructor() { }
+export class TablesComponent implements OnInit, OnDestroy {
+    public headerRow: Array<string> = [];
+    /*public teams: Team[] = [];*/
+    public subscr1: Subscription;
+
+    constructor(private service: RestDatasource) {
+    }
 
   ngOnInit() {
-      this.tableData = {
-          headerRow: [ '№', 'КОМАНДА', 'И', 'В', 'Н', 'П', '+:-', 'О'],
-          dataRows: [
-              ['1', 'Dakota Rice', 'Niger', 'Oud-Turnhout', '$36,738'],
-              ['2', 'Minerva Hooper', 'Curaçao', 'Sinaai-Waas', '$23,789'],
-              ['3', 'Sage Rodriguez', 'Netherlands', 'Baileux', '$56,142'],
-              ['4', 'Philip Chaney', 'Korea, South', 'Overland Park', '$38,735'],
-              ['5', 'Doris Greene', 'Malawi', 'Feldkirchen in Kärnten', '$63,542'],
-              ['6', 'Mason Porter', 'Chile', 'Gloucester', '$78,615']
-          ]
-      };
+      this.headerRow = [ '№', 'КОМАНДА', 'И', 'В', 'Н', 'П', '+:-', 'О'];
+      /*this.subscr1 = this.service.getTeams()
+          .subscribe(data => {
+              /!*this.teams = data;*!/
+          });*/
   }
+
+    ngOnDestroy() {
+        /*this.subscr1.unsubscribe();*/
+    }
 
 }

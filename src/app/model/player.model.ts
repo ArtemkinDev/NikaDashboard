@@ -2,13 +2,17 @@ export class Player {
     constructor (
         public firstName: string,
         public lastName: string,
-        public login: string,
+        public email: string,
         public password: string,
-        public year: string,
+        public yearOfBirth: number,
+        public monthOfBirth: string,
+        public dayOfBirth: string,
+        public age: number,
         public number: number,
+        public position: string,
         public playerStatistic: PlayerStatistic,
         public playerImage: string,
-        public id?: number
+        public id?: string | number
     ) {
     }
 }

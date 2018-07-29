@@ -1,6 +1,10 @@
-<div class="main-content">
+<div class="main-content" *ngIf="!currentPlayer">
+	<span>Loading...</span>
+</div>
+<div class="main-content" *ngIf="currentPlayer">
 	<div class="container-fluid">
 		<div class="content-holder">
+			<div class="bg-image" style="background-image:url('/assets/img/slide1.jpg');"></div>
 			<div class="row player-details">
 				<div class="col-sm-4">
 					<div class="img-holder">
@@ -9,13 +13,32 @@
 				</div>
 				<div class="col-sm-8">
 					<div class="info-col">
-						<p>{{currentPlayer.number}}</p>
-						<h3>{{currentPlayer.firstName}}</h3>
-						<h3>{{currentPlayer.lastName}}</h3>
-					</div>
-					<div class="info-col">
-						<p class="date-title">Дата рождения:</p>
-						<p class="date">{{currentPlayer.year}}</p>
+						<h3>{{currentPlayer.firstName}} {{currentPlayer.lastName}}</h3>
+						<div class="info-table">
+							<div class="row">
+								<div class="col-xs-6 info-table-prop">Дата рождения (Возраст):</div>
+								<div class="col-xs-6 info-table-value">
+									{{currentPlayer.dayOfBirth}}.{{currentPlayer.monthOfBirth}}.{{currentPlayer.yearOfBirth}}
+									({{currentPlayer.age}})
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 info-table-prop">Номер</div>
+								<div class="col-xs-6 info-table-value">{{currentPlayer.number}}</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 info-table-prop">Позиция</div>
+								<div class="col-xs-6 info-table-value">{{currentPlayer.position}}</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 info-table-prop">Рост</div>
+								<div class="col-xs-6 info-table-value">189 см</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 info-table-prop">Вес</div>
+								<div class="col-xs-6 info-table-value">80 кг</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -23,7 +46,7 @@
 		<div class="row">
 			<div class="col-xs-12 season-statistics">
 				<div class="athlete-statistic">
-					<h3>Stats (Season 17/18)</h3>
+					<h3>Статистика (Сезон 17/18)</h3>
 					<div class="stat">
 						<div class="icon">
 							<img src="assets/img/Icons/Soccerball_shad_check.svg" alt="image description">
@@ -44,7 +67,7 @@
 					</div>
 					<div class="stat">
 						<div class="icon">
-						<img src="assets/img/Icons/Yellow_card.png" alt="image description">
+							<img src="assets/img/Icons/Yellow_card.png" alt="image description">
 						</div>
 						<span class="amount">{{ currentPlayer.playerStatistic.yellowCard }}</span>
 						<span class="identifier">

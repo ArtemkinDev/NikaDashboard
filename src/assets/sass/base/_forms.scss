@@ -1,0 +1,154 @@
+// forms
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+input[type='url'],
+input[type='date'],
+.form-control {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  outline: none;
+  border:none;
+  border-bottom:1px solid $form-element-border-color;
+  padding: 12px 13px 4px 0;
+  background-color: transparent;
+  font-size: 14px;
+  color: $white;
+  font-weight: 400;
+  box-sizing:border-box;
+  transition:border-bottom-color 0.3s linear;
+  @include media ('>=tablet') {
+    padding: 12px 13px 6px 0;
+    font-size: 16px;
+  }
+  @include media ('>=largescreen') {
+    font-size: 24px;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom-color:$form-element-focus-border-color;
+  }
+  &:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+  &:focus::-moz-placeholder {
+    color: transparent
+  }
+  &:focus:-moz-placeholder {
+    color: transparent
+  }
+  &:focus:-ms-input-placeholder {
+    color: transparent
+  }
+
+  @include placeholder {
+    color: $placeholder-color;
+    font-weight: 400;
+    font-size: 14px;
+    @include media ('>=tablet') {
+      font-size: 16px; 
+    }
+    @include media ('>=largescreen') {
+      font-size: 24px;
+    }
+  }
+  &::-ms-clear {
+    display: none;
+  }
+
+}
+
+select {
+  -webkit-border-radius: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+  height: 100px;
+  background-color: rgba(242, 242, 242, 0.2);
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  padding: 10px 10px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  outline: none;  
+  font-size: 14px;
+  color: $white;
+  font-weight: 400;
+  box-sizing:border-box;
+  transition:border-color 0.3s linear;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color:$form-element-focus-border-color;
+  }
+  &:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+  &:focus::-moz-placeholder {
+    color: transparent
+  }
+  &:focus:-moz-placeholder {
+    color: transparent
+  }
+  &:focus:-ms-input-placeholder {
+    color: transparent
+  }
+
+  @include placeholder {
+    color: $placeholder-color;
+    font-weight: 400;
+    font-size: 14px;
+    @include media ('>=tablet') {
+      font-size: 16px; 
+    }
+    @include media ('>=largescreen') {
+      font-size: 24px;
+    }
+  }
+  &::-ms-clear {
+    display: none;
+  }
+
+  @include media ('>=tablet') {
+    background-color: transparent;
+     font-size: 16px;
+  }
+  @include media ('>=largescreen') {
+    height: 155px;
+    font-size: 24px;
+  }
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  cursor: pointer;
+}
+

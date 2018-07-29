@@ -3,7 +3,7 @@ import { ROUTES } from '../../sidebar/sidebar.component';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 
 @Component({
-    // moduleId: module.id,
+    moduleId: module.id,
     selector: 'navbar-cmp',
     templateUrl: 'navbar.component.html'
   })
@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit{
     this.sidebarVisible = false;
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.listTitles = ROUTES.filter(listTitle => listTitle);
     const navbar: HTMLElement = this.element.nativeElement;
     this.toggleButton = navbar.getElementsByClassName('navbar-toggle')[0];
@@ -50,19 +50,21 @@ export class NavbarComponent implements OnInit{
         }
       };
 
-      getTitle(){
-        var titlee = this.location.prepareExternalUrl(this.location.path());
+      getTitle() {
+        let titlee = this.location.prepareExternalUrl(this.location.path());
 
-        if(titlee.indexOf('player') > -1) {
-          return 'Профиль игрока';
-        } else {
-          titlee = titlee.split('/').pop();
+          if ( titlee.split('/')[1] === 'player' ) {
+              return 'Профиль игрока';
+        } else if ( titlee.split('/')[1] === 'auth') {
+            return 'Войти';
+          } else {
+          titlee = titlee.split('/')[1];
         }
 
-        for(var item = 0; item < this.listTitles.length; item++){
-          if(this.listTitles[item].path === titlee){
+        for (let item = 0; item < this.listTitles.length; item++) {
+          if (this.listTitles[item].path === titlee) {
             return this.listTitles[item].title;
-          } 
+          };
         }
         return 'Главная';
       }
