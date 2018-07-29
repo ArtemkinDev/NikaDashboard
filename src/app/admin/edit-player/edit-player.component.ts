@@ -11,7 +11,7 @@ declare var $: any;
 @Component({
     selector: 'app-edit-player',
     templateUrl: './edit-player.component.html',
-    styleUrls: [ './edit-player.component.scss' ]
+    styleUrls: ['./edit-player.component.scss']
 })
 export class EditPlayerComponent implements OnInit, OnDestroy {
 
@@ -29,14 +29,14 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     selectedFiles: FileList;
     currentUpload: Upload;
     currentUploadUrl;
-    positions: [ string ] = [ 'нападающий', 'защитник', 'вратарь' ];
+    positions: string[] = ['нападающий', 'защитник', 'вратарь'];
     authMsg;
     playerLoading = false;
     players: Player[] = [];
     currentEditingPlayer: Player = null;
 
     constructor(private service: PlayerService,
-                private uploadService: UploadService) {
+        private uploadService: UploadService) {
     }
 
     ngOnInit() {
@@ -46,18 +46,15 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
         this.subscr2 = this.service.getNumbers().subscribe(data => {
             this.currentPlayersNumbers = data.map(p => p.number);
             this.numberIsLoading = true;
-            this.createNumber();
         });
-
-        this.createForm();
     }
 
     getDays() {
         const days = [];
 
-        for ( let i = 1; i <= 31; i++ ) {
+        for (let i = 1; i <= 31; i++) {
 
-            if ( i < 10 ) {
+            if (i < 10) {
                 days.push('0' + String(i));
             } else {
                 days.push(String(i));
@@ -71,9 +68,9 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     getMonth() {
         const month = [];
 
-        for ( let i = 1; i <= 12; i++ ) {
+        for (let i = 1; i <= 12; i++) {
 
-            if ( i < 10 ) {
+            if (i < 10) {
                 month.push('0' + String(i));
             } else {
                 month.push(String(i));
@@ -87,7 +84,7 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     getYears() {
         const years = [];
 
-        for ( let i = 1945; i <= 2018; i++ ) {
+        for (let i = 1945; i <= 2018; i++) {
             years.push(i);
         }
         ;
@@ -95,7 +92,11 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
         return years;
     }
 
-    createForm() {
+    /*
+    * Вызываю форму с параметрами потому что select selected не работает в цикле
+    */
+
+    createForm(day, month, year, number, position) {
         this.form = new FormGroup({
             'name': new FormControl(null, [
                 Validators.required,
@@ -105,13 +106,13 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
                 Validators.required,
                 Validators.minLength(2)
             ]),
-            'day': new FormControl(null, [
+            'day': new FormControl(day, [
                 Validators.required
             ]),
-            'month': new FormControl(null, [
+            'month': new FormControl(month, [
                 Validators.required
             ]),
-            'year': new FormControl(null, [
+            'year': new FormControl(year, [
                 Validators.required,
             ]),
             'email': new FormControl(null, [
@@ -122,10 +123,10 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
                 Validators.required,
                 Validators.minLength(6)
             ]),
-            'numbers': new FormControl(null, [
+            'numbers': new FormControl(number, [
                 Validators.required
             ]),
-            'position': new FormControl(null, [
+            'position': new FormControl(position, [
                 Validators.required
             ])
         });
@@ -134,54 +135,54 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     validatorMessages(fieldtype: string): string | boolean {
         const form = this.form;
 
-        if ( !form || !form.invalid ) {
+        if (!form || !form.invalid) {
             return false;
         }
 
         let error: string;
 
-        if ( fieldtype === 'name' ) {
-            if ( form.get('name')[ 'errors' ][ 'required' ] ) {
+        if (fieldtype === 'name') {
+            if (form.get('name')['errors']['required']) {
                 error = 'Введите Имя игрока';
-            } else if ( form.get('name')[ 'errors' ][ 'minlength' ] ) {
+            } else if (form.get('name')['errors']['minlength']) {
                 error = 'Минимальное количество символов - 2';
             }
-        } else if ( fieldtype === 'lastname' ) {
-            if ( form.get('lastname')[ 'errors' ][ 'required' ] ) {
+        } else if (fieldtype === 'lastname') {
+            if (form.get('lastname')['errors']['required']) {
                 error = 'Введите фамилию игрока';
-            } else if ( form.get('lastname')[ 'errors' ][ 'minlength' ] ) {
+            } else if (form.get('lastname')['errors']['minlength']) {
                 error = 'Минимальное количество символов - 2';
             }
-        } else if ( fieldtype === 'day' ) {
-            if ( form.get('day')[ 'errors' ][ 'required' ] ) {
+        } else if (fieldtype === 'day') {
+            if (form.get('day')['errors']['required']) {
                 error = 'Введите день рождения';
             }
-        } else if ( fieldtype === 'month' ) {
-            if ( form.get('month')[ 'errors' ][ 'required' ] ) {
+        } else if (fieldtype === 'month') {
+            if (form.get('month')['errors']['required']) {
                 error = 'Введите месяц рождения';
             }
-        } else if ( fieldtype === 'year' ) {
-            if ( form.get('year')[ 'errors' ][ 'required' ] ) {
+        } else if (fieldtype === 'year') {
+            if (form.get('year')['errors']['required']) {
                 error = 'Введите год рождения';
             }
-        } else if ( fieldtype === 'email' ) {
-            if ( form.get('email')[ 'errors' ][ 'required' ] ) {
+        } else if (fieldtype === 'email') {
+            if (form.get('email')['errors']['required']) {
                 error = 'Введите email';
-            } else if ( form.get('email')[ 'errors' ][ 'pattern' ] ) {
+            } else if (form.get('email')['errors']['pattern']) {
                 error = 'Неправильно введен email';
             }
-        } else if ( fieldtype === 'password' ) {
-            if ( form.get('password')[ 'errors' ][ 'required' ] ) {
+        } else if (fieldtype === 'password') {
+            if (form.get('password')['errors']['required']) {
                 error = 'Введите пароль';
-            } else if ( form.get('password')[ 'errors' ][ 'minlength' ] ) {
+            } else if (form.get('password')['errors']['minlength']) {
                 error = 'Минимальное количество символов - 6';
             }
-        } else if ( fieldtype === 'numbers' ) {
-            if ( form.get('numbers')[ 'errors' ][ 'required' ] ) {
+        } else if (fieldtype === 'numbers') {
+            if (form.get('numbers')['errors']['required']) {
                 error = 'Укажите номер';
             }
-        } else if ( fieldtype === 'position' ) {
-            if ( form.get('position')[ 'errors' ][ 'required' ] ) {
+        } else if (fieldtype === 'position') {
+            if (form.get('position')['errors']['required']) {
                 error = 'Выберете позицию игрока';
             }
         }
@@ -191,20 +192,22 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
 
     createNumber() {
         const maxNumber = 100;
-        for ( let i = 1; i <= maxNumber; i++ ) {
+        for (let i = 1; i <= maxNumber; i++) {
             this.playerNumbers.push(i);
         }
 
-        if ( this.currentPlayersNumbers ) {
-            for ( let i = 0; i <= this.currentPlayersNumbers.length - 1; i++ ) {
-                this.playerNumbers
-                    .splice(this.playerNumbers.indexOf(this.currentPlayersNumbers[ i ]), 1);
+        if (this.currentPlayersNumbers) {
+            for (let i = 0; i <= this.currentPlayersNumbers.length - 1; i++) {
+                if (!(this.currentPlayersNumbers[i] === this.currentEditingPlayer.number)) {
+                    this.playerNumbers
+                        .splice(this.playerNumbers.indexOf(this.currentPlayersNumbers[i]), 1);
+                }
             }
         }
     }
 
     showPreviewImage(event: any) {
-        if ( event.target.files && event.target.files[ 0 ] ) {
+        if (event.target.files && event.target.files[0]) {
             const reader = new FileReader();
 
             this.selectedFiles = event.target.files;
@@ -213,12 +216,12 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
                 this.imgUploaderURL = event.target.result;
                 this.imgLoad = true;
             };
-            reader.readAsDataURL(event.target.files[ 0 ]);
+            reader.readAsDataURL(event.target.files[0]);
         }
     }
 
     uploadSingle() {
-        if ( this.selectedFiles && this.selectedFiles.length > 0 ) {
+        if (this.selectedFiles && this.selectedFiles.length > 0) {
             const file = this.selectedFiles.item(0);
             this.currentUpload = new Upload(file);
             return this.uploadService.pushUpload(this.currentUpload);
@@ -237,13 +240,13 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
             icon: 'pe-7s-gift',
             message: this.authMsg
         }, {
-            type: type,
-            timer: 2000,
-            placement: {
-                from: from,
-                align: align
-            }
-        });
+                type: type,
+                timer: 2000,
+                placement: {
+                    from: from,
+                    align: align
+                }
+            });
     }
 
     onSubmit() {
@@ -260,7 +263,7 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
         const date = Date.now();
         const calcAge = new Date().getFullYear() - +formData.year;
         const playerImageURLDefault = 'https://firebasestorage.googleapis.com/v0/b/mfcnika-be47b.appspot.com/o/player-images%2Fdefault-avatar.png?alt=media&token=1811dfa0-391a-4688-bacd-bc7406520138';
-        const [ firstName, lastName, email, password, yearOfBirth, monthOfBirth, dayOfBirth, age, number, position, playerStatistic, playerImage, id ] = [
+        const [firstName, lastName, email, password, yearOfBirth, monthOfBirth, dayOfBirth, age, number, position, playerStatistic, playerImage, id] = [
             formData.name,
             formData.lastname,
             formData.email,
@@ -276,13 +279,13 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
             date
         ];
 
-        if ( form.invalid ) {
+        if (form.invalid) {
             Object.keys(form.controls).forEach(field => { // {1}
                 const control = form.get(field);            // {2}
                 control.markAsTouched({ onlySelf: true });       // {3}
             });
         } else {
-            if ( this.imgLoad ) {
+            if (this.imgLoad) {
                 this.playerLoading = true;
                 this.uploadSingle().then(data => {
 
@@ -298,7 +301,7 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
                         number,
                         position,
                         playerStatistic,
-                        data.metadata.downloadURLs[ 0 ], id
+                        data.metadata.downloadURLs[0], id
                     );
 
                     this.service.createPlayer(player).then(() => {
@@ -344,6 +347,11 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     addCurrentPlayer(number: number) {
         this.subscr3 = this.service.getPlayer(number).subscribe(data => {
             this.currentEditingPlayer = data;
+            this.createNumber();
+            this.createForm(
+                this.currentEditingPlayer.dayOfBirth, this.currentEditingPlayer.monthOfBirth, this.currentEditingPlayer.yearOfBirth, this.currentEditingPlayer.number,
+                this.currentEditingPlayer.position
+            );
         });
         return false;
     }
@@ -355,7 +363,7 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     ngOnDestroy() {
         this.subscr1.unsubscribe();
         this.subscr2.unsubscribe();
-        if ( this.subscr3 ) {
+        if (this.subscr3) {
             this.subscr3.unsubscribe();
         }
     }
