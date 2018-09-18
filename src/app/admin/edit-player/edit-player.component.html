@@ -19,7 +19,7 @@
             <div class="form-group">
                 <div class="file-input" [ngClass]="{'img-load': imgLoad}">
                     <div class="photo-preview">
-                        <img [attr.src]="imgUploaderURL" alt="">
+                        <img [attr.src]="newImgUploaderURL || currentImgURL" alt="">
                         <div class="temp-image"></div>
                         <div class="close-img" (click)="resetFile()"></div>
                     </div>
@@ -31,15 +31,14 @@
             </div>
             <div class="form-group">
                 <label for="name">Имя</label>
-                <input type="text" class="form-control" id="name" placeholder="Имя" autocomplete="off" formControlName="name" [value]="currentEditingPlayer.firstName">
+                <input type="text" class="form-control" id="name" placeholder="Имя" autocomplete="off" formControlName="name">
                 <small class="text-danger" *ngIf="form.get('name').invalid && (form.get('name').dirty)">
                     {{validatorMessages('name')}}
                 </small>
             </div>
             <div class="form-group">
                 <label for="lastname">Фамилия</label>
-                <input type="text" class="form-control" id="lastname" placeholder="Фамилия" autocomplete="off" formControlName="lastname"
-                    [value]="currentEditingPlayer.lastName">
+                <input type="text" class="form-control" id="lastname" placeholder="Фамилия" autocomplete="off" formControlName="lastname">
                 <small class="text-danger" *ngIf="form.get('lastname').invalid && (form.get('lastname').dirty)">
                     {{validatorMessages('lastname')}}
                 </small>
@@ -94,14 +93,14 @@
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Логин" formControlName="email" [value]="currentEditingPlayer.email">
+                <input type="email" class="form-control" id="email" placeholder="Логин" autocomplete="off" formControlName="email">
                 <small class="text-danger" *ngIf="form.get('email').invalid && (form.get('email').dirty)">
                     {{validatorMessages('email')}}
                 </small>
             </div>
             <div class="form-group">
                 <label for="password">Пароль</label>
-                <input type="text" class="form-control" id="password" placeholder="Пароль" formControlName="password" [value]="currentEditingPlayer.password">
+                <input type="text" class="form-control" id="password" placeholder="Пароль" autocomplete="off" formControlName="password">
                 <small class="text-danger" *ngIf="form.get('password').invalid && (form.get('password').dirty)">
                     {{validatorMessages('password')}}
                 </small>

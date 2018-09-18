@@ -13,7 +13,7 @@ export class TeamComponent implements OnInit, OnDestroy {
     subscr1: Subscription;
     players: Player[] = [];
     isLoading = false;
-    sortItem: [ object ] = [
+    sortItem = [
         {
             text: 'Возрасту',
             data: 'age'

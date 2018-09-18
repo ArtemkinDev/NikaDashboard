@@ -1,3 +1,4 @@
+import { AddLeagueComponent } from './add-league/add-league.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin.component';
@@ -6,8 +7,9 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
 
 const routes: Routes = [
     { path: '', component: AdminComponent, children: [
-        {path: 'add-player', component: AddPlayerComponent},
-        {path: 'edit-player', component: EditPlayerComponent},
+        { path: 'add-player', component: AddPlayerComponent },
+        { path: 'edit-player', component: EditPlayerComponent },
+        { path: 'add-league', component: AddLeagueComponent },
         { path: '**', redirectTo: 'main' },
     ] },
     { path: '**', component: AdminComponent }

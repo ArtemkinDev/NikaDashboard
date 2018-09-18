@@ -1,11 +1,15 @@
-<div class="main-content">
+<div class="main-content" *ngIf="!isLoading">
+	<span>Loading...</span>
+</div>
+<div class="main-content" *ngIf="isLoading">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
                         <h4 class="title">Групповой этап</h4>
-                        <p class="category">Весна 2018</p>
+                        <p class="category">{{ league.season }}</p>
+                        <p class="category">{{ league.lNumber }}</p>
                     </div>
                     <div class="content table-responsive table-full-width">
                           <table class="table table-bordered">
@@ -15,18 +19,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <tr *ngIf="!teams">
-                                    <td colspan="8" class="text-center">Сезон еще не начался!</td>
+                                <tr *ngIf="!league.lTeams">
+                                    <td colspan="10" class="text-center">Сезон еще не начался!</td>
                                 </tr>
-                                    <tr *ngFor="let team of teams; let i = index;">
+                                    <tr *ngFor="let team of league.lTeams; let i = index;">
                                         <td>{{i + 1}}</td>
-                                        <td>{{team.name}}</td>
-                                        <td>{{team.games}}</td>
-                                        <td>{{team.win}}</td>
-                                        <td>{{team.draw}}</td>
-                                        <td>{{team.defeats}}</td>
-                                        <td>{{team.goalsScored}}:{{team.goalsMissing}}</td>
-                                        <td>{{team.points}}</td>
+                                        <td>{{team.teamName}}</td>
+                                        <td>{{team.statistic.games}}</td>
+                                        <td>{{team.statistic.gamesWon}}</td>
+                                        <td>{{team.statistic.gamesDraw}}</td>
+                                        <td>{{team.statistic.gamesLost}}</td>
+                                        <td>{{team.statistic.goalsScored}}</td>
+                                        <td>{{team.statistic.goalsMissed}}</td>
+                                        <td>{{team.statistic.goalsDifference}}</td>
+                                        <td>{{team.statistic.point}}</td>
                                     </tr>
                                 </tbody>
                           </table>

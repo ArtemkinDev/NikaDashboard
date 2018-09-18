@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="content">
+    <form class="edit-league-form"
+          [formGroup]="form"
+          (ngSubmit)="onSubmit()"
+          [ngClass]="{'league-loading' : leagueLoading}"
+    >
+      <legend>Создать лигу</legend>
+      <div class="form-group">
+        <label for="season">Название лиги</label>
+        <input type="text" class="form-control" id="season" placeholder="Название" autocomplete="off" formControlName="season">
+        <small class="text-danger" *ngIf="form.get('season').invalid && (form.get('season').dirty || form.get('season').touched)">
+          {{validatorMessages('season')}}
+        </small>
+      </div>
+      <div class="form-group">
+        <label for="lnumber">Номер лиги</label>
+        <input type="text" class="form-control" id="lnumber" placeholder="Номер" autocomplete="off" formControlName="lnumber">
+        <small class="text-danger" *ngIf="form.get('lnumber').invalid && (form.get('lnumber').dirty || form.get('lnumber').touched)">
+          {{validatorMessages('lnumber')}}
+        </small>
+      </div>
+      <div class="form-group teams-block" formArrayName="teams">
+        <label for="teamName">Команды</label>
+          <div *ngFor = "let team of form.controls['teams'].controls; let idx = index" [formGroupName]="idx">
+            <input type="text" class="form-control" [attr.id]="'teamName' +idx" placeholder="Название команды" autocomplete="off" formControlName="teamName">
+            <small class="text-danger" *ngIf="team.controls.teamName.invalid && team.controls.teamName.dirty || team.controls.teamName.touched || invalid">
+              <span *ngIf="team.hasError('required', 'teamName')">{{validatorMessages('teamName')}}</span>
+            </small>
+          </div>
+          <button type="button" (click)=addNewTeam() class="btn btn-default">Добавить команду</button>
+      </div>
+      <button type="submit" class="btn btn-success btn-fill btn-wd">Создать сезон</button>
+    </form>
+  </div>
+</div>

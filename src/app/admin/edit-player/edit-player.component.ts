@@ -24,8 +24,11 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     numberIsLoading = false;
     playerNumbers = [];
     currentPlayersNumbers: number[];
-    imgUploaderURL;
+
+    newImgUploaderURL;
+    currentImgURL;
     imgLoad = false;
+
     selectedFiles: FileList;
     currentUpload: Upload;
     currentUploadUrl;
@@ -42,6 +45,7 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     ngOnInit() {
         this.subscr1 = this.service.getPlayers().subscribe(data => {
             this.players = data;
+            console.log(this.players)
         });
         this.subscr2 = this.service.getNumbers().subscribe(data => {
             this.currentPlayersNumbers = data.map(p => p.number);
@@ -96,13 +100,13 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     * Вызываю форму с параметрами потому что select selected не работает в цикле
     */
 
-    createForm(day, month, year, number, position) {
+    createForm(name, lastname, day, month, year, email, password, number, position) {
         this.form = new FormGroup({
-            'name': new FormControl(null, [
+            'name': new FormControl(name, [
                 Validators.required,
                 Validators.minLength(2)
             ]),
-            'lastname': new FormControl(null, [
+            'lastname': new FormControl(lastname, [
                 Validators.required,
                 Validators.minLength(2)
             ]),
@@ -115,11 +119,11 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
             'year': new FormControl(year, [
                 Validators.required,
             ]),
-            'email': new FormControl(null, [
+            'email': new FormControl(email, [
                 Validators.required,
                 Validators.pattern('^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$')
             ]),
-            'password': new FormControl(null, [
+            'password': new FormControl(password, [
                 Validators.required,
                 Validators.minLength(6)
             ]),
@@ -192,6 +196,9 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
 
     createNumber() {
         const maxNumber = 100;
+
+        this.playerNumbers = [];
+
         for (let i = 1; i <= maxNumber; i++) {
             this.playerNumbers.push(i);
         }
@@ -213,7 +220,7 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
             this.selectedFiles = event.target.files;
 
             reader.onload = (event: any) => {
-                this.imgUploaderURL = event.target.result;
+                this.newImgUploaderURL = event.target.result;
                 this.imgLoad = true;
             };
             reader.readAsDataURL(event.target.files[0]);
@@ -229,7 +236,8 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     }
 
     resetFile() {
-        this.imgUploaderURL = '';
+        this.newImgUploaderURL = '';
+        this.currentImgURL = '';
         this.imgLoad = false;
         this.inputFile.nativeElement.value = '';
     }
@@ -260,10 +268,9 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
         };
         const form = this.form;
         const formData = form.value;
-        const date = Date.now();
         const calcAge = new Date().getFullYear() - +formData.year;
         const playerImageURLDefault = 'https://firebasestorage.googleapis.com/v0/b/mfcnika-be47b.appspot.com/o/player-images%2Fdefault-avatar.png?alt=media&token=1811dfa0-391a-4688-bacd-bc7406520138';
-        const [firstName, lastName, email, password, yearOfBirth, monthOfBirth, dayOfBirth, age, number, position, playerStatistic, playerImage, id] = [
+        const [firstName, lastName, email, password, yearOfBirth, monthOfBirth, dayOfBirth, age, number, position, playerStatistic, playerImage, id, uid] = [
             formData.name,
             formData.lastname,
             formData.email,
@@ -274,9 +281,10 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
             calcAge,
             +formData.numbers,
             formData.position,
-            defaultPlayerStat,
-            playerImageURLDefault,
-            date
+            this.currentEditingPlayer.playerStatistic,
+            this.currentEditingPlayer.playerImage,
+            this.currentEditingPlayer.id,
+            this.currentEditingPlayer.uid
         ];
 
         if (form.invalid) {
@@ -285,7 +293,7 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
                 control.markAsTouched({ onlySelf: true });       // {3}
             });
         } else {
-            if (this.imgLoad) {
+            if (this.newImgUploaderURL) {
                 this.playerLoading = true;
                 this.uploadSingle().then(data => {
 
@@ -301,15 +309,13 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
                         number,
                         position,
                         playerStatistic,
-                        data.metadata.downloadURLs[0], id
+                        data.metadata.downloadURLs[0], id, uid
                     );
 
-                    this.service.createPlayer(player).then(() => {
+                    this.service.updatePlayer(player).then(() => {
                         this.playerLoading = false;
-                        this.authMsg = 'Новый игрок добавлен!';
+                        this.authMsg = 'Данные игрока отредактированы!';
                         this.showNotification('top', 'center', 'success');
-                        this.resetFile();
-                        this.form.reset();
                         this.authMsg = '';
                     });
                 });
@@ -326,18 +332,17 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
                     number,
                     position,
                     playerStatistic,
-                    playerImageURLDefault,
-                    id
+                    playerImage,
+                    id,
+                    uid
                 );
 
                 this.playerLoading = true;
 
-                this.service.createPlayer(player).then(() => {
+                this.service.updatePlayer(player).then(() => {
                     this.playerLoading = false;
-                    this.authMsg = 'Новый игрок добавлен!';
+                    this.authMsg = 'Данные игрока отредактированы!';
                     this.showNotification('top', 'center', 'success');
-                    this.resetFile();
-                    this.form.reset();
                     this.authMsg = '';
                 });
             }
@@ -345,19 +350,57 @@ export class EditPlayerComponent implements OnInit, OnDestroy {
     }
 
     addCurrentPlayer(number: number) {
-        this.subscr3 = this.service.getPlayer(number).subscribe(data => {
-            this.currentEditingPlayer = data;
+        /* this.subscr3 = this.service.getPlayer(number).subscribe(data => {
+             if (!this.currentEditingPlayer || this.currentEditingPlayer.number != data.number) {
+                 this.currentEditingPlayer = data;
+                 console.log(data)
+                 this.currentImgURL = data.playerImage;
+                 this.imgLoad = true;
+                 this.createNumber();
+                 this.createForm(
+                     this.currentEditingPlayer.firstName,
+                     this.currentEditingPlayer.lastName,
+                     this.currentEditingPlayer.dayOfBirth, this.currentEditingPlayer.monthOfBirth, this.currentEditingPlayer.yearOfBirth,
+                     this.currentEditingPlayer.email,
+                     this.currentEditingPlayer.password,
+                     this.currentEditingPlayer.number,
+                     this.currentEditingPlayer.position
+                 );
+             }
+         });
+         */
+
+        if (this.players.length > 0) {
+            const curPlayer = this.players.filter(p => {
+                return p.number === number;
+            })[0];
+
+            this.currentEditingPlayer = curPlayer;
+            this.currentImgURL = curPlayer.playerImage;
+            this.imgLoad = true;
             this.createNumber();
             this.createForm(
-                this.currentEditingPlayer.dayOfBirth, this.currentEditingPlayer.monthOfBirth, this.currentEditingPlayer.yearOfBirth, this.currentEditingPlayer.number,
+                this.currentEditingPlayer.firstName,
+                this.currentEditingPlayer.lastName,
+                this.currentEditingPlayer.dayOfBirth, this.currentEditingPlayer.monthOfBirth, this.currentEditingPlayer.yearOfBirth,
+                this.currentEditingPlayer.email,
+                this.currentEditingPlayer.password,
+                this.currentEditingPlayer.number,
                 this.currentEditingPlayer.position
             );
-        });
+        }
+
         return false;
     }
 
     deletePlayer() {
-
+        this.service.deletePlayer(this.currentEditingPlayer)
+            .then(() => {
+                this.authMsg = 'Игрок успешно удалён!';
+                this.showNotification('top', 'center', 'success');
+                this.authMsg = '';
+                this.currentEditingPlayer = null;
+            });
     }
 
     ngOnDestroy() {

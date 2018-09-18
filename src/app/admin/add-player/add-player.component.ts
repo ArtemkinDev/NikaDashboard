@@ -28,7 +28,7 @@ export class AddPlayerComponent implements OnInit, OnDestroy {
     selectedFiles: FileList;
     currentUpload: Upload;
     currentUploadUrl;
-    positions: [ string ] = [ 'нападающий', 'защитник', 'вратарь' ];
+    positions: string[] = [ 'нападающий', 'защитник', 'вратарь' ];
     authMsg;
     playerLoading = false;
 

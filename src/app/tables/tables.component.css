@@ -1,0 +1,3 @@
+th:not(:nth-child(2)), td:not(:nth-child(2)) {
+    text-align: center;
+}

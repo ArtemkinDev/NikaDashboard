@@ -12,7 +12,8 @@ export class Player {
         public position: string,
         public playerStatistic: PlayerStatistic,
         public playerImage: string,
-        public id?: string | number
+        public id?: string | number,
+        public uid?: string
     ) {
     }
 }

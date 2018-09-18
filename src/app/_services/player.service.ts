@@ -8,22 +8,27 @@ export class PlayerService {
     playersCollection: AngularFirestoreCollection<Player>;
     playerDoc: AngularFirestoreDocument<Player>;
     players: Observable<Player[]>;
-    numbers: [ Number ];
+    playersIsLoading = false;
+    numbers: Number[];
 
     constructor(private db: AngularFirestore) {
         db.firestore.settings({ timestampsInSnapshots: true });
 
         /*this.players = this.db.collection('players').valueChanges();*/
-        this.players = this.db.collection('players')
+
+        if(!this.playersIsLoading) {
+            this.players = this.db.collection('players')
             .snapshotChanges()
             .map(changes => {
                 return changes.map(a => {
-                    const data = a.payload.doc.data() as Player;
-                    data.id = a.payload.doc.id;
-                    console.log(data);
+                   const data = a.payload.doc.data() as Player;
+                    data.uid = a.payload.doc.id;
+                    this.playersIsLoading = true;
+
                     return data;
                 });
             });
+        }
     }
 
     getPlayers() {
@@ -34,7 +39,7 @@ export class PlayerService {
         return this.players;
     }
 
-    getPlayer(number: number): Observable<Player> {
+    getPlayer(number: number): Observable<any> {
         return this.db
             .collection('players', ref => ref.where('number', '==', number))
             .valueChanges()
@@ -44,20 +49,26 @@ export class PlayerService {
     }
 
     createPlayer(player: Player): Promise<any> {
+        player.uid = '1';
         const obj = {};
         Object.keys(player).forEach(function (key, index) {
             obj[ key ] = player[ key ];
         });
+
         return this.db.collection('players').add(obj);
     }
 
-    deleteItem(player: Player) {
-        this.playerDoc = this.db.doc(`players/${player.id}`);
-        this.playerDoc.delete();
+    deletePlayer(player: Player): Promise<any> {
+        this.playerDoc = this.db.doc(`players/${player.uid}`);
+        return this.playerDoc.delete();
     }
 
-    updateItem(player: Player) {
-        this.playerDoc = this.db.doc(`players/${player.id}`);
-        this.playerDoc.update(player);
+    updatePlayer(player: Player): Promise<any> {
+        const obj = {};
+        Object.keys(player).forEach(function (key, index) {
+            obj[ key ] = player[ key ];
+        });
+        const itemsRef  = this.db.doc(`players/${player.uid}`);
+        return itemsRef.update(obj);
     }
 }

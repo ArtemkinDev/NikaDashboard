@@ -3,7 +3,7 @@
 </div>
 <div class="main-content" *ngIf="currentPlayer">
 	<div class="container-fluid">
-		<div class="content-holder">
+		<!--<div class="content-holder">
 			<div class="bg-image" style="background-image:url('/assets/img/slide1.jpg');"></div>
 			<div class="row player-details">
 				<div class="col-sm-4">
@@ -93,6 +93,61 @@
 						</span>
 					</div>
 				</div>
+			</div>
+		</div>
+	-->
+		<div class="player-card-holder first-bg">
+			<div class="info-row">
+				<div class="img-holder">
+					<img src="{{currentPlayer.playerImage}}" alt="">
+				</div>
+				<div class="content-holder">
+					<h2>{{currentPlayer.firstName}} {{currentPlayer.lastName}}</h2>
+					<ul class="info-list list-unstyled">
+						<li>
+							<span>дата рождения (возраст):</span>
+							{{currentPlayer.dayOfBirth}}.{{currentPlayer.monthOfBirth}}.{{currentPlayer.yearOfBirth}} ({{currentPlayer.age}})
+						</li>
+						<li>
+							<span>Номер:</span>{{currentPlayer.number}}</li>
+						<li>
+							<span>позиция:</span>{{currentPlayer.position}}</li>
+						<li>
+							<span>рейтинг:</span>
+							{{currentPlayer.playerStatistic.totalRating}}
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="statistic-row">
+				<h3>Статистика</h3>
+				<p>(сезон 17/18)</p>
+				<ul class="stat-list list-unstyled">
+					<li>
+						<div class="stat-list-title">игр</div>
+						<div class="stat-list-number">
+							{{currentPlayer.playerStatistic.matches }}
+						</div>
+					</li>
+					<li>
+						<div class="stat-list-title">голов</div>
+						<div class="stat-list-number">
+							{{currentPlayer.playerStatistic.goals }}
+						</div>
+					</li>
+					<li>
+						<div class="stat-list-title">карточек</div>
+						<div class="stat-list-number">
+							{{currentPlayer.playerStatistic.redCard }}
+						</div>
+					</li>
+					<li>
+						<div class="stat-list-title">карточек</div>
+						<div class="stat-list-number">
+							{{currentPlayer.playerStatistic.yellowCard }}
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>

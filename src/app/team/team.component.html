@@ -10,7 +10,7 @@
 					   aria-haspopup="true" aria-expanded="false"> Сортировать по: {{pathText}}<span class="caret"></span></a>
 					<ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
 						<li *ngFor="let item of sortItem">
-							<a href="#" (click) = sortTeam(item.data,item.text)>{{item.text}}</a>
+							<a href="#" (click) = sortTeam(item.data,item.text) >{{ item.text }}</a>
 						</li>
 					</ul>
 				</div>

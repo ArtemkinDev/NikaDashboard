@@ -6,6 +6,7 @@ import { AdminRoutingModule } from './admin.routing';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { AddLeagueComponent } from './add-league/add-league.component';
 
 @NgModule({
     imports: [
@@ -13,7 +14,7 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
         RouterModule,
         ReactiveFormsModule
     ],
-    declarations: [ AdminComponent, AddPlayerComponent, EditPlayerComponent ],
+    declarations: [ AdminComponent, AddPlayerComponent, EditPlayerComponent, AddLeagueComponent ],
     exports: [ AdminRoutingModule ]
 })
 export class AdminModule {

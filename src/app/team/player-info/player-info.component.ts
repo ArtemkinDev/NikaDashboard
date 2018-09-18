@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Player } from '../../model/player.model';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
-import 'rxjs/Rx';
+import 'rxjs';
 import { PlayerService } from '../../_services/player.service';
 
 @Component({
