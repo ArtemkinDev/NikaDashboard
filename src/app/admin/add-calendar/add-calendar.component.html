@@ -1,0 +1,49 @@
+<div class="main-content" *ngIf="!isLoading">
+  <span>Loading...</span>
+</div>
+<div *ngIf="isLoading">
+  <div class="card">
+    <button type="button" class="btn btn-default" (click)="addTour()">Добавить тур</button>
+  </div>
+  <div class="card">
+    <div class="content">
+      <form class="create-calendar-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="tour-wrapper" formArrayName="tours">
+          <div *ngFor="let tour of form.controls['tours'].controls; let i = index" [formGroupName]="i" class="tour-box">
+            <div class="form-group">
+              <label for="tourNumber">Название тура</label>
+              <input type="text" class="form-control" id="tourNumber" placeholder="Номер" autocomplete="off"
+                formControlName="tourNumber">
+            </div>
+            <div class="match-row" formArrayName="matches">
+              <div *ngFor="let match of tour.get('matches').controls; let idx = index" [formGroupName]="idx">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="homeTeam">Хозяева</label>
+                      <select class="form-control" id="homeTeam" formControlName="homeTeam">
+                        <option *ngFor="let team of league.lTeams" value="{{team.teamName}}">{{team.teamName}}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="awayTeam">Гости</label>
+                      <select class="form-control" id="awayTeam" formControlName="awayTeam">
+                        <option *ngFor="let team of league.lTeams" value="{{team.teamName}}">{{team.teamName}}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-default" (click)="addMatch(tour.controls['matches'])">Добавить матч</button>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success btn-fill btn-wd">Создать календарь</button>
+      </form>
+    </div>
+  </div>
+</div>

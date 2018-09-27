@@ -1,3 +1,4 @@
+import { AddCalendarComponent } from './add-calendar/add-calendar.component';
 import { AddLeagueComponent } from './add-league/add-league.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -10,6 +11,7 @@ const routes: Routes = [
         { path: 'add-player', component: AddPlayerComponent },
         { path: 'edit-player', component: EditPlayerComponent },
         { path: 'add-league', component: AddLeagueComponent },
+        { path: 'add-calendar', component: AddCalendarComponent },
         { path: '**', redirectTo: 'main' },
     ] },
     { path: '**', component: AdminComponent }

@@ -1,0 +1,16 @@
+.card {
+    &:first-child {
+        margin-bottom: 25px;
+        padding: 15px;
+    }
+
+    .tour-wrapper {
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    .tour-box {
+        padding: 25px 0;
+        border-bottom: 1px solid #337ab7;
+    }
+}
