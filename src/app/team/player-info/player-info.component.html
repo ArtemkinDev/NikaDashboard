@@ -1,101 +1,8 @@
 <div class="main-content" *ngIf="!currentPlayer">
-	<span>Loading...</span>
+	<div id="loader"><img src="assets/img/soccer-ball.svg" alt="loading"></div>
 </div>
 <div class="main-content" *ngIf="currentPlayer">
 	<div class="container-fluid">
-		<!--<div class="content-holder">
-			<div class="bg-image" style="background-image:url('/assets/img/slide1.jpg');"></div>
-			<div class="row player-details">
-				<div class="col-sm-4">
-					<div class="img-holder">
-						<img src="{{currentPlayer.playerImage}}" alt="">
-					</div>
-				</div>
-				<div class="col-sm-8">
-					<div class="info-col">
-						<h3>{{currentPlayer.firstName}} {{currentPlayer.lastName}}</h3>
-						<div class="info-table">
-							<div class="row">
-								<div class="col-xs-6 info-table-prop">Дата рождения (Возраст):</div>
-								<div class="col-xs-6 info-table-value">
-									{{currentPlayer.dayOfBirth}}.{{currentPlayer.monthOfBirth}}.{{currentPlayer.yearOfBirth}}
-									({{currentPlayer.age}})
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-6 info-table-prop">Номер</div>
-								<div class="col-xs-6 info-table-value">{{currentPlayer.number}}</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-6 info-table-prop">Позиция</div>
-								<div class="col-xs-6 info-table-value">{{currentPlayer.position}}</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-6 info-table-prop">Рост</div>
-								<div class="col-xs-6 info-table-value">189 см</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-6 info-table-prop">Вес</div>
-								<div class="col-xs-6 info-table-value">80 кг</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 season-statistics">
-				<div class="athlete-statistic">
-					<h3>Статистика (Сезон 17/18)</h3>
-					<div class="stat">
-						<div class="icon">
-							<img src="assets/img/Icons/Soccerball_shad_check.svg" alt="image description">
-						</div>
-						<span class="amount">{{ currentPlayer.playerStatistic.matches }}</span>
-						<span class="identifier">
-							Игр
-						</span>
-					</div>
-					<div class="stat">
-						<div class="icon">
-							<img src="assets/img/Icons/football-logo-ball.png" alt="image description">
-						</div>
-						<span class="amount">{{ currentPlayer.playerStatistic.goals }}</span>
-						<span class="identifier">
-							Голов
-						</span>
-					</div>
-					<div class="stat">
-						<div class="icon">
-							<img src="assets/img/Icons/Yellow_card.png" alt="image description">
-						</div>
-						<span class="amount">{{ currentPlayer.playerStatistic.yellowCard }}</span>
-						<span class="identifier">
-							Карточек
-						</span>
-					</div>
-					<div class="stat">
-						<div class="icon">
-							<img src="assets/img/Icons/red-card.png" alt="image description">
-						</div>
-						<span class="amount">{{ currentPlayer.playerStatistic.redCard }}</span>
-						<span class="identifier">
-							Карточек
-						</span>
-					</div>
-					<div class="stat">
-						<div class="icon">
-							<img src="assets/img/Icons/star-rating.png" alt="image description">
-						</div>
-						<span class="amount">{{ currentPlayer.playerStatistic.totalRating }}</span>
-						<span class="identifier">
-							Рейтинг
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	-->
 		<div class="player-card-holder first-bg">
 			<div class="info-row">
 				<div class="img-holder">
@@ -121,7 +28,10 @@
 			</div>
 			<div class="statistic-row">
 				<h3>Статистика</h3>
-				<p>(сезон 17/18)</p>
+				<p>
+					<span *ngIf="currentSeason">{{ currentSeason }}</span>
+					<span *ngIf="!currentSeason">(сезон)</span>
+				</p>
 				<ul class="stat-list list-unstyled">
 					<li>
 						<div class="stat-list-title">игр</div>

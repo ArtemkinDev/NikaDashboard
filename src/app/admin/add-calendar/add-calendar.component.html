@@ -18,6 +18,27 @@
             <div class="match-row" formArrayName="matches">
               <div *ngFor="let match of tour.get('matches').controls; let idx = index" [formGroupName]="idx">
                 <div class="row">
+                  <div class="col-xs-12">
+                    <h6>Матч {{ idx + 1 }}</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="date">Дата</label>
+                      <input type="text" class="form-control" id="date" placeholder="01.01.2018" autocomplete="off"
+                        formControlName="date">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="time">Время</label>
+                      <input type="text" class="form-control" id="time" placeholder="00:00" autocomplete="off"
+                        formControlName="time">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="homeTeam">Хозяева</label>

@@ -1,0 +1,252 @@
+@import '../../../assets/sass/vendors/include-media';
+.player-box-holder {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+    @include media ('>=desktop') {
+        justify-content: flex-start;
+    }
+}
+
+.player-box {
+    width: 250px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    &:hover {
+        opacity: 0.6;
+    }
+    @include media ('>=tablet') {
+        width: 33%;
+    }
+    @include media ('>=1200px') {
+        width: 250px;
+    }
+    &__wrapper {
+        display: block;
+        text-decoration: none;
+        background: #fff;
+        border: 1px solid #1DC7EA;
+        border-radius: 5px;
+        padding: 10px 10px 18px;
+        font: 12px/16px 'Arial';
+        color: #0f2349;
+        text-align: left;
+        background-color: #ffffea;
+        background-image: linear-gradient(-125deg, #ffd5d7 0%, #ffffea 100%);
+    }
+    .world-cup__players & {
+        padding: 0;
+        width: 100%;
+        @include media ('>=480px') {
+            width: 100%;
+        }
+        @include media ('>=tablet') {
+            padding: 20px 20px 18px; // width: 197px;
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+    &__frame {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        height: 144px;
+        margin: -10px -10px 0;
+        border-radius: 5px 5px 0 0;
+        .players & {
+            margin: 0;
+            height: 190px;
+            border-radius: 5px;
+            @include media ('>=tablet') {
+                margin: -10px -10px 0;
+                border-radius: 5px 5px 0 0;
+                height: 134px;
+            }
+        }
+    }
+    &__left-col {
+        position: relative;
+        width: 50%;
+        padding: 10px;
+    }
+    &__right-col {
+        position: relative;
+        width: 50%;
+    }
+    &__name {
+        color: #032958;
+        font-size: 15px;
+        line-height: 1;
+        text-transform: capitalize;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff;
+    }
+    &__number {
+        color: #001a3a;
+        opacity: 0.12;
+        font-size: 75px;
+        line-height: 1;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+    }
+    &__photo {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        z-index: 2;
+        .lightbox-demo & {
+            bottom: auto;
+            max-height: none;
+        }
+    }
+    &__info {
+        background: #0e2e55; // padding:10px 43px 10px 27px;
+        padding: 10px;
+        margin: 0 -10px 12px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 18px;
+        .players & {
+            display: none;
+            @include media ('>=tablet') {
+                display: block;
+            }
+        }
+        .player-box__col {
+            height: auto;
+            line-height: 18px;
+            strong {
+                line-height: 18px;
+            }
+        }
+    }
+    &__text-small {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    &__cols {
+        display: flex;
+        width: 100%;
+        .world-cup__players & {
+            display: none;
+            @include media ('>=tablet') {
+                display: flex;
+            }
+        }
+    }
+    &__col {
+        width: 50%;
+        padding: 0 0 0 10px;
+        height: 48px;
+        &:first-child {
+            padding: 0;
+            width: 50%;
+        }
+        strong {
+            display: inline-block;
+            vertical-align: top;
+            margin: 2px 0 0;
+            line-height: 12px;
+            font-size: 14px;
+        }
+        &--rating-col {
+            height: auto;
+            span {
+                display: block;
+                white-space: nowrap;
+                margin-bottom: 5px;
+            }
+            strong {
+                font-size: 16px;
+            }
+        }
+        .star-rating {
+            display: inline-block;
+            width: 25px;
+            height: 24px;
+            margin-top: -4px;
+        }
+    }
+    &__flag-frame {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 11px;
+        /*background:url(../images/base-flag.svg) no-repeat;*/
+        width: 31px;
+        height: 16px;
+        background-size: cover;
+        padding: 2px; // box-shadow: 0 10px 19px 1px rgba(187, 187, 188, 0.4);
+        // border: 2px solid $lighter-yellow;
+    }
+    &__flag {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 25px;
+        height: 12px;
+        background-size: cover;
+        background-position: center center;
+    }
+    &__country-of-birth {
+        margin: 0 -7px;
+        white-space: nowrap;
+        .world-cup__players & {
+            display: none;
+            @include media ('>=tablet') {
+                display: block;
+            }
+        }
+        .world-cup__player-box__flag-frame {
+            position: relative;
+            float: left;
+            top: 0;
+            left: 0;
+            margin: 6px 5px 0 2px;
+        } // &__frame{
+        // 	overflow:hidden;
+        // }
+    }
+    strong {
+        display: block;
+    }
+}
+
+.player-box__hover {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 100%;
+    bottom: 0;
+    transition: left 0.3s ease-in-out;
+    z-index: 10;
+    border-radius: 5px;
+    background: #fff;
+    padding: 12px 15px 32px 15px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #0e2e55;
+    text-align: left;
+    .popup-active & {
+        left: 0;
+    }
+    .player-box__name {
+        position: static;
+        margin: 0 0 20px;
+    }
+    .jcf-scrollable {
+        height: 220px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

@@ -13,34 +13,7 @@ export class TeamComponent implements OnInit, OnDestroy {
     subscr1: Subscription;
     players: Player[] = [];
     isLoading = false;
-    sortItem = [
-        {
-            text: 'Возрасту',
-            data: 'age'
-        },
-        {
-            text: 'Голам',
-            data: 'goal'
-        },
-        {
-            text: 'Играм',
-            data: 'game'
-        },
-        {
-            text: 'Номеру',
-            data: 'number'
-        },
-        {
-            text: 'Позиции',
-            data: 'pos'
-        },
-        {
-            text: 'Рейтингу',
-            data: 'star'
-        }
-    ];
     path = 'pos';
-    pathText = 'Позиции';
 
     constructor(private service: PlayerService) {
     }
@@ -56,10 +29,8 @@ export class TeamComponent implements OnInit, OnDestroy {
                 });
     }
 
-    sortTeam(path: string, text: string) {
+    filterPath(path: string) {
         this.path = path;
-        this.pathText = text;
-        return false;
     }
 
     ngOnDestroy() {

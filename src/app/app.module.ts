@@ -29,6 +29,10 @@ import { PlayerInfoComponent } from './team/player-info/player-info.component';
 import { AuthComponent } from './auth/auth.component';
 import { AuthGuard } from './auth/auth-guard.guard';
 import { TeamSortPipe } from './shared/pipes/team-sort.pipe';
+import { TeamCardsComponent } from './team/team-cards/team-cards.component';
+import { TeamFilterComponent } from './team/team-filter/team-filter.component';
+import { HoverClassDirective } from './shared/directives/hover-class.directive';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
     declarations: [
@@ -44,7 +48,11 @@ import { TeamSortPipe } from './shared/pipes/team-sort.pipe';
         TeamComponent,
         PlayerInfoComponent,
         AuthComponent,
-        TeamSortPipe
+        TeamSortPipe,
+        TeamCardsComponent,
+        TeamFilterComponent,
+        HoverClassDirective,
+        CalendarComponent
     ],
     imports: [
         BrowserModule,

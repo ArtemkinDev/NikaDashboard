@@ -1,72 +1,18 @@
 <div class="main-content" *ngIf="!isLoading">
-	<span>Loading...</span>
+	<div id="loader"><img src="assets/img/soccer-ball.svg" alt="loading"></div>
 </div>
 <div class="main-content" *ngIf="isLoading">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 col-sm-4">
-				<div class="dropdown">
-					<a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
-					   aria-haspopup="true" aria-expanded="false"> Сортировать по: {{pathText}}<span class="caret"></span></a>
-					<ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
-						<li *ngFor="let item of sortItem">
-							<a href="#" (click) = sortTeam(item.data,item.text) >{{ item.text }}</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<app-team-filter
+			(fileredData) = "filterPath($event)"
+			></app-team-filter>
 		</div>
 		<div class="row">
-			<!--player box-->
-			<div class="player-box-holder">
-				<a href=""
-				   class="player-box"
-				   *ngFor="let player of players | teamSort:path"
-				   [routerLink]="['/player', player.number]"
-				>
-					<div class="player-box__wrapper">
-						<div class="player-box__frame">
-							<div class="player-box__left-col">
-								<div class="player-box__name">{{player.firstName}} <br/>{{player.lastName}}</div>
-								<strong class="player-box__number">{{player.number}}</strong>
-							</div>
-							<div class="player-box__right-col">
-								<img src="{{player.playerImage}}"
-									 alt="{{player.firstName}}" class="player-box__photo">
-							</div>
-
-						</div>
-						<div class="player-box__info">
-							<div class="player-box__cols">
-								<div class="player-box__col">
-									<span class="player-box__text-small">Возраст</span>
-									<strong>{{player.age}}</strong>
-								</div>
-								<div class="player-box__col">
-									<span class="player-box__text-small">Позиция</span>
-									<strong>{{player.position}}</strong>
-								</div>
-							</div>
-						</div>
-						<div class="player-box__cols">
-							<div class="player-box__col player-box__col--rating-col">
-							<span>Игр/Голов</span>
-							</div>
-							<div class="player-box__col player-box__col--rating-col">
-								<strong>{{player.playerStatistic.matches}}/{{player.playerStatistic.goals}}</strong>
-							</div>
-						</div>
-						<div class="player-box__cols">
-							<div class="player-box__col player-box__col--rating-col">
-							<span>Рейтинг</span>
-							</div>
-							<div class="player-box__col player-box__col--rating-col">
-								<strong>{{player.playerStatistic.totalRating}}</strong>
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
+			<app-team-cards
+			[players] = "players"
+			[path] = "path"
+			></app-team-cards>
 		</div>
 	</div>
 </div>

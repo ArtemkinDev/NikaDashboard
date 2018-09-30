@@ -256,9 +256,14 @@ input:focus {
 	transform: translate3d(0, -50%, 0);
 	text-align: center;
 	border-radius: 50%;
-	width: 45px;
-	height: 45px;
+	width: 55px;
+	height: 66px;
 	top: 50%;
+}
+
+#loader img {
+	width: 55px;
+	height: 66px;
 }
 
 .sidebar,

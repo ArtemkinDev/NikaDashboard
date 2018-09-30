@@ -1,0 +1,135 @@
+@import '../../assets/sass/vendors/include-media';
+.calendar-holder {
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .tour-row {
+        margin-bottom: 25px;
+        .tour-number {
+            font-size: 18px;
+            text-align: left;
+            color: #242424;
+        }
+        li {
+            border-top: 1px solid #e8e8e8;
+            text-align: center;
+            &:last-child {
+                border-bottom: 1px solid #e8e8e8;
+            }
+            .date-wrapper {
+                position: relative;
+                width: 15%;
+                display: inline-block;
+                vertical-align: middle;
+                span {
+                    display: block;
+                    color: #242424;
+                }
+                &::after {
+                    content: "";
+                    top: 0;
+                    bottom: 0;
+                    width: 2px;
+                    display: block;
+                    position: absolute;
+                    background: #e4e4e4;
+                    right: 0;
+                }
+                @include media ('<768px') {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    &::after {
+                        display: none;
+                    }
+                    span {
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .match-wrapper {
+                position: relative;
+                width: 85%;
+                white-space: nowrap;
+                display: inline-block;
+                vertical-align: middle;
+                @include media ('<768px') {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                }
+            }
+            a {
+                position: relative;
+                display: block;
+                padding: 15px 10px;
+                white-space: nowrap;
+                &:hover {
+                    background-color: #1DC7EA;
+                    .team {
+                        color: #fff;
+                    }
+                    .score {
+                        background-color: #fff;
+                        color: #0e2e55;
+                    }
+                    .date-wrapper {
+                        span {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .team {
+                font-weight: 700;
+                font-size: 16px;
+                color: #242424;
+                width: 50%;
+                display: inline-block;
+                vertical-align: middle;
+                &:first-child {
+                    padding-right: 50px;
+                }
+                &:last-child {
+                    padding-left: 50px;
+                }
+                @include media ('<768px') {
+                    font-size: 12px;
+                    &:first-child {
+                        padding-right: 30px;
+                    }
+                    &:last-child {
+                        padding-left: 30px;
+                    }
+                }
+            }
+            .score {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70px;
+                height: 30px;
+                line-height: 30px;
+                background: #0e2e55;
+                color: #ffffff;
+                line-height: 30px;
+                font-size: 18px;
+                @include media ('<768px') {
+                    font-size: 12px;
+                    width: 40px;
+                    height: 25px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}

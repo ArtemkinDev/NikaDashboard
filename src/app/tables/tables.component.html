@@ -1,5 +1,5 @@
 <div class="main-content" *ngIf="!isLoading">
-	<span>Loading...</span>
+    <div id="loader"><img src="assets/img/soccer-ball.svg" alt="loading"></div>
 </div>
 <div class="main-content" *ngIf="isLoading">
     <div class="container-fluid">
@@ -11,31 +11,89 @@
                         <p class="category">{{ league.season }}</p>
                         <p class="category">{{ league.lNumber }}</p>
                     </div>
-                    <div class="content table-responsive table-full-width">
-                          <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th *ngFor="let cell of headerRow">{{ cell }}</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                    <div class="content table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th *ngFor="let cell of headerRow">{{ cell }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
                                 <tr *ngIf="!league.lTeams">
                                     <td colspan="10" class="text-center">Сезон еще не начался!</td>
                                 </tr>
-                                    <tr *ngFor="let team of league.lTeams; let i = index;">
-                                        <td>{{i + 1}}</td>
-                                        <td>{{team.teamName}}</td>
-                                        <td>{{team.statistic.games}}</td>
-                                        <td>{{team.statistic.gamesWon}}</td>
-                                        <td>{{team.statistic.gamesDraw}}</td>
-                                        <td>{{team.statistic.gamesLost}}</td>
-                                        <td>{{team.statistic.goalsScored}}</td>
-                                        <td>{{team.statistic.goalsMissed}}</td>
-                                        <td>{{team.statistic.goalsDifference}}</td>
-                                        <td>{{team.statistic.point}}</td>
-                                    </tr>
-                                </tbody>
-                          </table>
+                                <tr *ngFor="let team of league.lTeams; let i = index;" [ngClass]="{'last-position': i > 7}">
+                                    <td>{{i + 1}}</td>
+                                    <td class="team"><a href="">{{team.teamName}}</a></td>
+                                    <td>{{team.statistic.games}}</td>
+                                    <td>{{team.statistic.gamesWon}}</td>
+                                    <td>{{team.statistic.gamesDraw}}</td>
+                                    <td>{{team.statistic.gamesLost}}</td>
+                                    <td>{{team.statistic.goalsScored}}</td>
+                                    <td>{{team.statistic.goalsMissed}}</td>
+                                    <td>{{team.statistic.goalsDifference}}</td>
+                                    <td class="points">{{team.statistic.point}}</td>
+                                    <td class="current-form">
+                                        <ul class="list-unstyled">
+                                            <li class="win" [hoverClass] = "hoverClass">
+                                                <span>В</span>
+                                                <a href="#" class="tooltipContainer linkable tooltip-link tooltip-right"                                             role="tooltip">
+                                                    <span class="tooltip-content">
+                                                        <div class="matchAbridged">
+                                                            <span class="score">4 <span>-</span> 1</span>
+                                                        </div>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="win" [hoverClass] = "hoverClass">
+                                                <span>В</span>
+                                                <a href="#" class="tooltipContainer linkable tooltip-link tooltip-right"
+                                                    role="tooltip">
+                                                    <span class="tooltip-content">
+                                                        <div class="matchAbridged">
+                                                            <span class="score">1 <span>-</span> 0</span>
+                                                        </div>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="def" [hoverClass] = "hoverClass">
+                                                <span>Н</span>
+                                                <a href="#" class="tooltipContainer linkable tooltip-link tooltip-right"
+                                                    role="tooltip">
+                                                    <span class="tooltip-content">
+                                                        <div class="matchAbridged">
+                                                            <span class="score">2 <span>-</span> 2</span>
+                                                        </div>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="win" [hoverClass] = "hoverClass">
+                                                <span>В</span>
+                                                <a href="#" class="tooltipContainer linkable tooltip-link tooltip-right"
+                                                    role="tooltip">
+                                                    <span class="tooltip-content">
+                                                        <div class="matchAbridged">
+                                                            <span class="score">4 <span>-</span> 3</span>
+                                                        </div>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="los" [hoverClass] = "hoverClass">
+                                                <span>П</span>
+                                                <a href="#" class="tooltipContainer linkable tooltip-link tooltip-right"
+                                                    role="tooltip">
+                                                    <span class="tooltip-content">
+                                                        <div class="matchAbridged">
+                                                            <span class="score">0 <span>-</span> 6</span>
+                                                        </div>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                     </div>
                 </div>

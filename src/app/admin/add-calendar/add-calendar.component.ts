@@ -29,12 +29,6 @@ export class AddCalendarComponent implements OnInit {
     this.createForm();
   }
 
-  onSubmit() {
-    const val = this.form.value;
-
-    console.log(val);
-  }
-
   createForm() {
     this.form = this.formBuilder.group({
       'tours': this.formBuilder.array([
@@ -54,6 +48,8 @@ export class AddCalendarComponent implements OnInit {
 
   initMatch() {
     return this.formBuilder.group({
+      'date': [''],
+      'time': [''],
       'homeTeam': [''],
       'awayTeam': [''],
     })
@@ -70,6 +66,12 @@ export class AddCalendarComponent implements OnInit {
 
   ngOnDestroy() {
     this.subscr1.unsubscribe();
+  }
+
+  onSubmit() {
+    const val = this.form.value;
+
+    console.log(val);
   }
 
 }

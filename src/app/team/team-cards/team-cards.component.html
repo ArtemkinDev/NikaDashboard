@@ -1,0 +1,45 @@
+<!--player box-->
+<div class="player-box-holder">
+  <a href="" class="player-box" *ngFor="let player of players | teamSort:path" [routerLink]="['/player', player.number]">
+    <div class="player-box__wrapper">
+      <div class="player-box__frame">
+        <div class="player-box__left-col">
+          <div class="player-box__name">{{player.firstName}} <br />{{player.lastName}}</div>
+          <strong class="player-box__number">{{player.number}}</strong>
+        </div>
+        <div class="player-box__right-col">
+          <img src="{{player.playerImage}}" alt="{{player.firstName}}" class="player-box__photo">
+        </div>
+
+      </div>
+      <div class="player-box__info">
+        <div class="player-box__cols">
+          <div class="player-box__col">
+            <span class="player-box__text-small">Возраст</span>
+            <strong>{{player.age}}</strong>
+          </div>
+          <div class="player-box__col">
+            <span class="player-box__text-small">Позиция</span>
+            <strong>{{player.position}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="player-box__cols">
+        <div class="player-box__col player-box__col--rating-col">
+          <span>Игр/Голов</span>
+        </div>
+        <div class="player-box__col player-box__col--rating-col">
+          <strong>{{player.playerStatistic.matches}}/{{player.playerStatistic.goals}}</strong>
+        </div>
+      </div>
+      <div class="player-box__cols">
+        <div class="player-box__col player-box__col--rating-col">
+          <span>Рейтинг</span>
+        </div>
+        <div class="player-box__col player-box__col--rating-col">
+          <strong>{{player.playerStatistic.totalRating}}</strong>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

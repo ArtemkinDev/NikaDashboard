@@ -18,6 +18,7 @@ export const ROUTES: RouteInfo[] = [
     { path: 'team', title: 'Команда', icon: 'pe-7s-users', class: '' },
     { path: 'user', title: 'Мой профиль', icon: 'pe-7s-id', class: '' },
     { path: 'table', title: 'Турнирная таблица', icon: 'pe-7s-note2', class: '' },
+    { path: 'calendar', title: 'Календарь', icon: 'pe-7s-note2', class: '' },
     { path: 'typography', title: 'События', icon: 'pe-7s-news-paper', class: '' },
     { path: 'icons', title: 'Icons', icon: 'pe-7s-science', class: '' },
     { path: 'notifications', title: 'Notifications', icon: 'pe-7s-bell', class: '' }
